@@ -10,32 +10,9 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Import prepared portfolio
-        if: ${{ hashFiles('portfolio-source.zip') != '' }}
-        shell: bash
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          import zipfile
-          root = Path.cwd().resolve()
-          with zipfile.ZipFile('portfolio-source.zip') as archive:
-              for entry in archive.infolist():
-                  target = (root / entry.filename).resolve()
-                  if not target.is_relative_to(root):
-                      raise RuntimeError('Invalid archive path')
-                  if entry.filename.startswith(('.github/', '.git/')):
-                      continue
-                  archive.extract(entry, root)
-          PY
-          git rm portfolio-source.zip
-          git add .
-          git -c user.name='TDDD' -c user.email='247834106+tyuityuitddd@users.noreply.github.com' commit -m "Import portfolio source and optimized artwork"
-          git push origin HEAD:main
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
