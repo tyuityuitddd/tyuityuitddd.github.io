@@ -1,0 +1,31 @@
+{
+  "slug": "ysf-project",
+  "category": "game",
+  "title": {
+    "zh": "YSF｜畢業專題",
+    "en": "YSF — Graduation project",
+    "ja": "YSF｜卒業制作"
+  },
+  "description": {
+    "zh": "畢業專題的主視覺、影像與遊戲畫面。",
+    "en": "Key visual, imagery and gameplay screenshot from a graduation project.",
+    "ja": "卒業制作のキービジュアル、イメージ作品とゲーム画面。"
+  },
+  "images": [
+    {
+      "src": "media/art-c760f2c8ff.webp",
+      "alt": "YSF封"
+    },
+    {
+      "src": "media/art-36db23ab74.webp",
+      "alt": "重複曝光"
+    },
+    {
+      "src": "media/art-9160472778.webp",
+      "alt": "真實遊戲畫面屍體+病歷表"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 100
+}

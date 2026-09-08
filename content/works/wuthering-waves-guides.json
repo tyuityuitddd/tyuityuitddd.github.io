@@ -1,0 +1,31 @@
+{
+  "slug": "wuthering-waves-guides",
+  "category": "design",
+  "title": {
+    "zh": "鳴潮｜角色攻略圖",
+    "en": "Wuthering Waves — Character guides",
+    "ja": "鳴潮｜キャラクター攻略図"
+  },
+  "description": {
+    "zh": "角色資訊、素材與養成攻略的一圖流編排。",
+    "en": "Single-image layouts for character information, materials and build guides.",
+    "ja": "キャラクター情報・素材・育成ガイドを一枚にまとめたレイアウト。"
+  },
+  "images": [
+    {
+      "src": "media/art-9929fe216a.webp",
+      "alt": "千咲一圖流"
+    },
+    {
+      "src": "media/art-e09f4c6921.webp",
+      "alt": "嘉貝莉娜一圖流(小高浮水印)"
+    },
+    {
+      "src": "media/art-25a61caff8.webp",
+      "alt": "尤諾一圖流"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 80
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "wuming-game",
+  "category": "game",
+  "title": {
+    "zh": "無名小鎮｜遊戲視覺",
+    "en": "WUMING — Game visuals",
+    "ja": "WUMING｜ゲームビジュアル"
+  },
+  "description": {
+    "zh": "FiveM 無名小鎮的遊戲載入畫面與地圖視覺。",
+    "en": "Loading screens and map visuals for the WUMING FiveM server.",
+    "ja": "FiveM サーバー「WUMING」のローディング画面とマップビジュアル。"
+  },
+  "images": [
+    {
+      "src": "media/art-c37c93c870.webp",
+      "alt": "loading畫面_1"
+    },
+    {
+      "src": "media/art-8baed65723.webp",
+      "alt": "loading畫面_2"
+    },
+    {
+      "src": "media/art-da4f682439.webp",
+      "alt": "遊戲內大地圖_4000_負責改衛星雲圖的配色和新增文字地標+LOGO+新MLO的更新"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 20
+}

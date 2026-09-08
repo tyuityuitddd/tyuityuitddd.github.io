@@ -1,0 +1,623 @@
+[
+  {
+    "index": 0,
+    "path": "01_插畫\\全身人像\\不好說.png",
+    "width": 2480,
+    "height": 3600,
+    "bytes": 3145173,
+    "image": "media/art-40519d3a21.webp",
+    "thumbnail": "media/art-40519d3a21-thumb.webp"
+  },
+  {
+    "index": 1,
+    "path": "01_插畫\\全身人像\\戳戳戳.png",
+    "width": 2480,
+    "height": 3600,
+    "bytes": 4762237,
+    "image": "media/art-d3f7772cd8.webp",
+    "thumbnail": "media/art-d3f7772cd8-thumb.webp"
+  },
+  {
+    "index": 2,
+    "path": "01_插畫\\全身人像\\拉瓜.png",
+    "width": 2480,
+    "height": 3600,
+    "bytes": 3634690,
+    "image": "media/art-872814c69d.webp",
+    "thumbnail": "media/art-872814c69d-thumb.webp"
+  },
+  {
+    "index": 3,
+    "path": "01_插畫\\全身人像\\林出七.png",
+    "width": 3720,
+    "height": 5400,
+    "bytes": 5631576,
+    "image": "media/art-afb3b2f5e4.webp",
+    "thumbnail": "media/art-afb3b2f5e4-thumb.webp"
+  },
+  {
+    "index": 4,
+    "path": "01_插畫\\全身人像\\海哥.png",
+    "width": 2480,
+    "height": 3600,
+    "bytes": 3772363,
+    "image": "media/art-8f04402012.webp",
+    "thumbnail": "media/art-8f04402012-thumb.webp"
+  },
+  {
+    "index": 5,
+    "path": "01_插畫\\全身人像\\老鷹V皮排版.png",
+    "width": 2000,
+    "height": 2843,
+    "bytes": 3075576,
+    "image": "media/art-be9083670a.webp",
+    "thumbnail": "media/art-be9083670a-thumb.webp"
+  },
+  {
+    "index": 6,
+    "path": "01_插畫\\全身人像\\阿蓮.png",
+    "width": 2480,
+    "height": 3600,
+    "bytes": 5668722,
+    "image": "media/art-c04f9725a9.webp",
+    "thumbnail": "media/art-c04f9725a9-thumb.webp"
+  },
+  {
+    "index": 7,
+    "path": "01_插畫\\半身人像\\00324.png",
+    "width": 2160,
+    "height": 3840,
+    "bytes": 4192413,
+    "image": "media/art-66cce1911a.webp",
+    "thumbnail": "media/art-66cce1911a-thumb.webp"
+  },
+  {
+    "index": 8,
+    "path": "01_插畫\\半身人像\\10-1.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 384050,
+    "image": "media/art-ad90f0d026.webp",
+    "thumbnail": "media/art-ad90f0d026-thumb.webp"
+  },
+  {
+    "index": 9,
+    "path": "01_插畫\\半身人像\\10-2.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 570471,
+    "image": "media/art-01d8014705.webp",
+    "thumbnail": "media/art-01d8014705-thumb.webp"
+  },
+  {
+    "index": 10,
+    "path": "01_插畫\\半身人像\\10-3.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 882546,
+    "image": "media/art-ae658cba48.webp",
+    "thumbnail": "media/art-ae658cba48-thumb.webp"
+  },
+  {
+    "index": 11,
+    "path": "01_插畫\\半身人像\\10-4.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 610054,
+    "image": "media/art-e4f0a6d515.webp",
+    "thumbnail": "media/art-e4f0a6d515-thumb.webp"
+  },
+  {
+    "index": 12,
+    "path": "01_插畫\\半身人像\\BD.png",
+    "width": 3280,
+    "height": 4317,
+    "bytes": 6303947,
+    "image": "media/art-9e1f0542b5.webp",
+    "thumbnail": "media/art-9e1f0542b5-thumb.webp"
+  },
+  {
+    "index": 13,
+    "path": "01_插畫\\半身人像\\half_01.png",
+    "width": 2864,
+    "height": 4023,
+    "bytes": 7557356,
+    "image": "media/art-240d64ee44.webp",
+    "thumbnail": "media/art-240d64ee44-thumb.webp"
+  },
+  {
+    "index": 14,
+    "path": "01_插畫\\半身人像\\ruga.png",
+    "width": 1637,
+    "height": 2160,
+    "bytes": 2157643,
+    "image": "media/art-c103a1af66.webp",
+    "thumbnail": "media/art-c103a1af66-thumb.webp"
+  },
+  {
+    "index": 15,
+    "path": "01_插畫\\半身人像\\td_1.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 427350,
+    "image": "media/art-fd2342fa5b.webp",
+    "thumbnail": "media/art-fd2342fa5b-thumb.webp"
+  },
+  {
+    "index": 16,
+    "path": "01_插畫\\半身人像\\TT.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 381838,
+    "image": "media/art-3d6272bdd6.webp",
+    "thumbnail": "media/art-3d6272bdd6-thumb.webp"
+  },
+  {
+    "index": 17,
+    "path": "01_插畫\\半身人像\\初七.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 597036,
+    "image": "media/art-7f994aa0a8.webp",
+    "thumbnail": "media/art-7f994aa0a8-thumb.webp"
+  },
+  {
+    "index": 18,
+    "path": "01_插畫\\半身人像\\初七朋友.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 766032,
+    "image": "media/art-0a3da03cef.webp",
+    "thumbnail": "media/art-0a3da03cef-thumb.webp"
+  },
+  {
+    "index": 19,
+    "path": "01_插畫\\半身人像\\女兒大圖.png",
+    "width": 2063,
+    "height": 2292,
+    "bytes": 3473013,
+    "image": "media/art-90e7b7bde1.webp",
+    "thumbnail": "media/art-90e7b7bde1-thumb.webp"
+  },
+  {
+    "index": 20,
+    "path": "01_插畫\\半身人像\\威九.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 385448,
+    "image": "media/art-0749cfd377.webp",
+    "thumbnail": "media/art-0749cfd377-thumb.webp"
+  },
+  {
+    "index": 21,
+    "path": "01_插畫\\半身人像\\小冷.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 407326,
+    "image": "media/art-20a9e77aec.webp",
+    "thumbnail": "media/art-20a9e77aec-thumb.webp"
+  },
+  {
+    "index": 22,
+    "path": "01_插畫\\半身人像\\我英荼毘.png",
+    "width": 1500,
+    "height": 2160,
+    "bytes": 3775639,
+    "image": "media/art-84ddaa1f6f.webp",
+    "thumbnail": "media/art-84ddaa1f6f-thumb.webp"
+  },
+  {
+    "index": 23,
+    "path": "01_插畫\\半身人像\\瑞奇雙人.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 642231,
+    "image": "media/art-f662179aa0.webp",
+    "thumbnail": "media/art-f662179aa0-thumb.webp"
+  },
+  {
+    "index": 24,
+    "path": "01_插畫\\半身人像\\禁藥王2.png",
+    "width": 5468,
+    "height": 5771,
+    "bytes": 2242088,
+    "image": "media/art-b9c4b65bdd.webp",
+    "thumbnail": "media/art-b9c4b65bdd-thumb.webp"
+  },
+  {
+    "index": 25,
+    "path": "01_插畫\\半身人像\\羋羋.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 670833,
+    "image": "media/art-6af5748e07.webp",
+    "thumbnail": "media/art-6af5748e07-thumb.webp"
+  },
+  {
+    "index": 26,
+    "path": "01_插畫\\半身人像\\贊尼.TDpng.png",
+    "width": 2480,
+    "height": 3600,
+    "bytes": 4699712,
+    "image": "media/art-c3f644c984.webp",
+    "thumbnail": "media/art-c3f644c984-thumb.webp"
+  },
+  {
+    "index": 27,
+    "path": "01_插畫\\半身人像\\阿全.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 378171,
+    "image": "media/art-526fbf3d6e.webp",
+    "thumbnail": "media/art-526fbf3d6e-thumb.webp"
+  },
+  {
+    "index": 28,
+    "path": "01_插畫\\半身人像\\阿廉.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 384968,
+    "image": "media/art-1a4e64ffba.webp",
+    "thumbnail": "media/art-1a4e64ffba-thumb.webp"
+  },
+  {
+    "index": 29,
+    "path": "02_遊戲\\107年畢業專題\\YSF封.png",
+    "width": 1000,
+    "height": 1500,
+    "bytes": 1864579,
+    "image": "media/art-c760f2c8ff.webp",
+    "thumbnail": "media/art-c760f2c8ff-thumb.webp"
+  },
+  {
+    "index": 30,
+    "path": "02_遊戲\\107年畢業專題\\真實遊戲畫面屍體+病歷表.jpg",
+    "width": 1663,
+    "height": 818,
+    "bytes": 113153,
+    "image": "media/art-9160472778.webp",
+    "thumbnail": "media/art-9160472778-thumb.webp"
+  },
+  {
+    "index": 31,
+    "path": "02_遊戲\\107年畢業專題\\重複曝光.png",
+    "width": 1017,
+    "height": 1500,
+    "bytes": 1460654,
+    "image": "media/art-36db23ab74.webp",
+    "thumbnail": "media/art-36db23ab74-thumb.webp"
+  },
+  {
+    "index": 32,
+    "path": "02_遊戲\\FiveM伺服器_wuming無名小鎮\\loading畫面_1.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 2727558,
+    "image": "media/art-c37c93c870.webp",
+    "thumbnail": "media/art-c37c93c870-thumb.webp"
+  },
+  {
+    "index": 33,
+    "path": "02_遊戲\\FiveM伺服器_wuming無名小鎮\\loading畫面_2.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 2782366,
+    "image": "media/art-8baed65723.webp",
+    "thumbnail": "media/art-8baed65723-thumb.webp"
+  },
+  {
+    "index": 34,
+    "path": "02_遊戲\\FiveM伺服器_wuming無名小鎮\\遊戲內大地圖_4000_負責改衛星雲圖的配色和新增文字地標+LOGO+新MLO的更新.png",
+    "width": 4190,
+    "height": 6285,
+    "bytes": 39453891,
+    "image": "media/art-da4f682439.webp",
+    "thumbnail": "media/art-da4f682439-thumb.webp"
+  },
+  {
+    "index": 35,
+    "path": "02_遊戲\\WSTREAM實況工具的LOGO製作.png",
+    "width": 1536,
+    "height": 308,
+    "bytes": 35246,
+    "image": "media/art-38cf673d4f.webp",
+    "thumbnail": "media/art-38cf673d4f-thumb.webp"
+  },
+  {
+    "index": 36,
+    "path": "03_設計\\無名伺服器更新的公告banner\\76車廠.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1301312,
+    "image": "media/art-0ce751b278.webp",
+    "thumbnail": "media/art-0ce751b278-thumb.webp"
+  },
+  {
+    "index": 37,
+    "path": "03_設計\\無名伺服器更新的公告banner\\L’espoir Cafe.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1244077,
+    "image": "media/art-08ca6c4be2.webp",
+    "thumbnail": "media/art-08ca6c4be2-thumb.webp"
+  },
+  {
+    "index": 38,
+    "path": "03_設計\\無名伺服器更新的公告banner\\中秋月餅禮盒.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 460587,
+    "image": "media/art-9b0631ef44.webp",
+    "thumbnail": "media/art-9b0631ef44-thumb.webp"
+  },
+  {
+    "index": 39,
+    "path": "03_設計\\無名伺服器更新的公告banner\\公園更新.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1309112,
+    "image": "media/art-a231903179.webp",
+    "thumbnail": "media/art-a231903179-thumb.webp"
+  },
+  {
+    "index": 40,
+    "path": "03_設計\\無名伺服器更新的公告banner\\地下室.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1065792,
+    "image": "media/art-ea1e011fd0.webp",
+    "thumbnail": "media/art-ea1e011fd0-thumb.webp"
+  },
+  {
+    "index": 41,
+    "path": "03_設計\\無名伺服器更新的公告banner\\婚禮.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1458804,
+    "image": "media/art-9f63493412.webp",
+    "thumbnail": "media/art-9f63493412-thumb.webp"
+  },
+  {
+    "index": 42,
+    "path": "03_設計\\無名伺服器更新的公告banner\\巧手天賦.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 542172,
+    "image": "media/art-0abd5e000b.webp",
+    "thumbnail": "media/art-0abd5e000b-thumb.webp"
+  },
+  {
+    "index": 43,
+    "path": "03_設計\\無名伺服器更新的公告banner\\幫派領土更新.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1508396,
+    "image": "media/art-8d184eb2e7.webp",
+    "thumbnail": "media/art-8d184eb2e7-thumb.webp"
+  },
+  {
+    "index": 44,
+    "path": "03_設計\\無名伺服器更新的公告banner\\挖洞搶劫.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1415175,
+    "image": "media/art-2cd42c85f5.webp",
+    "thumbnail": "media/art-2cd42c85f5-thumb.webp"
+  },
+  {
+    "index": 45,
+    "path": "03_設計\\無名伺服器更新的公告banner\\無名批發訂購系統.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 408588,
+    "image": "media/art-cba1c904ed.webp",
+    "thumbnail": "media/art-cba1c904ed-thumb.webp"
+  },
+  {
+    "index": 46,
+    "path": "03_設計\\無名伺服器更新的公告banner\\無名餐廳外送平板.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1313414,
+    "image": "media/art-e7379557a0.webp",
+    "thumbnail": "media/art-e7379557a0-thumb.webp"
+  },
+  {
+    "index": 47,
+    "path": "03_設計\\無名伺服器更新的公告banner\\珠寶搶劫.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 934397,
+    "image": "media/art-7a6425d4d0.webp",
+    "thumbnail": "media/art-7a6425d4d0-thumb.webp"
+  },
+  {
+    "index": 48,
+    "path": "03_設計\\無名伺服器更新的公告banner\\老虎機.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1089492,
+    "image": "media/art-4f1345aafc.webp",
+    "thumbnail": "media/art-4f1345aafc-thumb.webp"
+  },
+  {
+    "index": 49,
+    "path": "03_設計\\無名伺服器更新的公告banner\\船隻.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 898546,
+    "image": "media/art-615309177f.webp",
+    "thumbnail": "media/art-615309177f-thumb.webp"
+  },
+  {
+    "index": 50,
+    "path": "03_設計\\無名伺服器更新的公告banner\\菸酒館更新.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1177323,
+    "image": "media/art-9a04a4efb3.webp",
+    "thumbnail": "media/art-9a04a4efb3-thumb.webp"
+  },
+  {
+    "index": 51,
+    "path": "03_設計\\無名伺服器更新的公告banner\\警局更新.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1191258,
+    "image": "media/art-1f338df4a8.webp",
+    "thumbnail": "media/art-1f338df4a8-thumb.webp"
+  },
+  {
+    "index": 52,
+    "path": "03_設計\\無名伺服器更新的公告banner\\貓咖啟動.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1708382,
+    "image": "media/art-fb6e760264.webp",
+    "thumbnail": "media/art-fb6e760264-thumb.webp"
+  },
+  {
+    "index": 53,
+    "path": "03_設計\\無名伺服器更新的公告banner\\貓咖貓咪.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 876100,
+    "image": "media/art-85fc537c3c.webp",
+    "thumbnail": "media/art-85fc537c3c-thumb.webp"
+  },
+  {
+    "index": 54,
+    "path": "03_設計\\無名伺服器更新的公告banner\\貨船搶劫.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1143384,
+    "image": "media/art-d50fce60eb.webp",
+    "thumbnail": "media/art-d50fce60eb-thumb.webp"
+  },
+  {
+    "index": 55,
+    "path": "03_設計\\無名伺服器更新的公告banner\\車廠更新.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1228675,
+    "image": "media/art-f4b5a1a0e4.webp",
+    "thumbnail": "media/art-f4b5a1a0e4-thumb.webp"
+  },
+  {
+    "index": 56,
+    "path": "03_設計\\無名伺服器更新的公告banner\\酒吧更新.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1088456,
+    "image": "media/art-35b1c29de2.webp",
+    "thumbnail": "media/art-35b1c29de2-thumb.webp"
+  },
+  {
+    "index": 57,
+    "path": "03_設計\\無名伺服器更新的公告banner\\雪人突入.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 829634,
+    "image": "media/art-850f5a11f7.webp",
+    "thumbnail": "media/art-850f5a11f7-thumb.webp"
+  },
+  {
+    "index": 58,
+    "path": "03_設計\\無名伺服器更新的公告banner\\餐廳資產.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1587850,
+    "image": "media/art-dedd41711f.webp",
+    "thumbnail": "media/art-dedd41711f-thumb.webp"
+  },
+  {
+    "index": 59,
+    "path": "03_設計\\無名伺服器更新的公告banner\\餐廳資產2.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 1695341,
+    "image": "media/art-39f3b44625.webp",
+    "thumbnail": "media/art-39f3b44625-thumb.webp"
+  },
+  {
+    "index": 60,
+    "path": "03_設計\\無名伺服器更新的公告banner\\魚中魚.png",
+    "width": 1445,
+    "height": 653,
+    "bytes": 859261,
+    "image": "media/art-34090ccde0.webp",
+    "thumbnail": "media/art-34090ccde0-thumb.webp"
+  },
+  {
+    "index": 61,
+    "path": "03_設計\\鳴潮YT系列封面\\西格莉卡YT直播封面.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 2597626,
+    "image": "media/art-0735701170.webp",
+    "thumbnail": "media/art-0735701170-thumb.webp"
+  },
+  {
+    "index": 62,
+    "path": "03_設計\\鳴潮YT系列封面\\陸赫斯.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 2388198,
+    "image": "media/art-e3928dbbf9.webp",
+    "thumbnail": "media/art-e3928dbbf9-thumb.webp"
+  },
+  {
+    "index": 63,
+    "path": "03_設計\\鳴潮角色一圖流素材攻略製作\\千咲一圖流.png",
+    "width": 2816,
+    "height": 1536,
+    "bytes": 3034226,
+    "image": "media/art-9929fe216a.webp",
+    "thumbnail": "media/art-9929fe216a-thumb.webp"
+  },
+  {
+    "index": 64,
+    "path": "03_設計\\鳴潮角色一圖流素材攻略製作\\嘉貝莉娜一圖流(小高浮水印).png",
+    "width": 2816,
+    "height": 1536,
+    "bytes": 3011379,
+    "image": "media/art-e09f4c6921.webp",
+    "thumbnail": "media/art-e09f4c6921-thumb.webp"
+  },
+  {
+    "index": 65,
+    "path": "03_設計\\鳴潮角色一圖流素材攻略製作\\尤諾一圖流.png",
+    "width": 2816,
+    "height": 1536,
+    "bytes": 3300635,
+    "image": "media/art-25a61caff8.webp",
+    "thumbnail": "media/art-25a61caff8-thumb.webp"
+  },
+  {
+    "index": 66,
+    "path": "04_個人資訊\\品牌WUMING的LOGO\\WUMING的LOGO(英文版).png",
+    "width": 7385,
+    "height": 3508,
+    "bytes": 385279,
+    "image": "media/art-574b64c644.webp",
+    "thumbnail": "media/art-574b64c644-thumb.webp"
+  },
+  {
+    "index": 67,
+    "path": "04_個人資訊\\品牌WUMING的LOGO\\無名的LOGO製作.png",
+    "width": 4167,
+    "height": 4167,
+    "bytes": 6277720,
+    "image": "media/art-8b971d769d.webp",
+    "thumbnail": "media/art-8b971d769d-thumb.webp"
+  },
+  {
+    "index": 68,
+    "path": "04_個人資訊\\本人的LOGO.png",
+    "width": 500,
+    "height": 484,
+    "bytes": 364753,
+    "image": "media/art-96777b6a41.webp",
+    "thumbnail": "media/art-96777b6a41-thumb.webp"
+  }
+]

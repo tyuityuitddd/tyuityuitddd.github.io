@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-13",
+  "category": "illustration",
+  "title": {
+    "zh": "角色習作 14",
+    "en": "角色習作 14 — Character illustration",
+    "ja": "角色習作 14 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-240d64ee44.webp",
+      "alt": "half_01"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 40
+}

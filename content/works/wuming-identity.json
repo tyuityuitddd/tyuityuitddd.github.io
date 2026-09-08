@@ -1,0 +1,27 @@
+{
+  "slug": "wuming-identity",
+  "category": "design",
+  "title": {
+    "zh": "WUMING｜品牌標誌",
+    "en": "WUMING — Brand marks",
+    "ja": "WUMING｜ブランドロゴ"
+  },
+  "description": {
+    "zh": "WUMING 無名品牌的中文與英文標誌。",
+    "en": "Chinese and English brand marks for WUMING.",
+    "ja": "WUMING ブランドの中国語・英語ロゴ。"
+  },
+  "images": [
+    {
+      "src": "media/art-8b971d769d.webp",
+      "alt": "無名的LOGO製作"
+    },
+    {
+      "src": "media/art-574b64c644.webp",
+      "alt": "WUMING的LOGO(英文版)"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 70
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-01",
+  "category": "illustration",
+  "title": {
+    "zh": "戳戳戳",
+    "en": "戳戳戳 — Character illustration",
+    "ja": "戳戳戳 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "全身角色插畫。",
+    "en": "Full-body character illustration.",
+    "ja": "全身キャラクターイラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-d3f7772cd8.webp",
+      "alt": "戳戳戳"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 130
+}

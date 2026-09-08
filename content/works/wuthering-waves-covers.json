@@ -1,0 +1,27 @@
+{
+  "slug": "wuthering-waves-covers",
+  "category": "design",
+  "title": {
+    "zh": "鳴潮｜直播封面",
+    "en": "Wuthering Waves — Stream covers",
+    "ja": "鳴潮｜配信サムネイル"
+  },
+  "description": {
+    "zh": "鳴潮主題的 YouTube 直播封面設計。",
+    "en": "YouTube livestream cover designs for Wuthering Waves.",
+    "ja": "「鳴潮」をテーマにした YouTube 配信サムネイル。"
+  },
+  "images": [
+    {
+      "src": "media/art-0735701170.webp",
+      "alt": "西格莉卡YT直播封面"
+    },
+    {
+      "src": "media/art-e3928dbbf9.webp",
+      "alt": "陸赫斯"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 30
+}

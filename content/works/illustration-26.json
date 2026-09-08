@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-26",
+  "category": "illustration",
+  "title": {
+    "zh": "贊尼",
+    "en": "贊尼 — Character illustration",
+    "ja": "贊尼 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-c3f644c984.webp",
+      "alt": "贊尼.TDpng"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 10
+}

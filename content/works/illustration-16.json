@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-16",
+  "category": "illustration",
+  "title": {
+    "zh": "TT",
+    "en": "TT — Character illustration",
+    "ja": "TT — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-3d6272bdd6.webp",
+      "alt": "TT"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 260
+}

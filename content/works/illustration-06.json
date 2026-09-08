@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-06",
+  "category": "illustration",
+  "title": {
+    "zh": "阿蓮",
+    "en": "阿蓮 — Character illustration",
+    "ja": "阿蓮 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "全身角色插畫。",
+    "en": "Full-body character illustration.",
+    "ja": "全身キャラクターイラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-c04f9725a9.webp",
+      "alt": "阿蓮"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 170
+}

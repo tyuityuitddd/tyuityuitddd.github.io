@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-21",
+  "category": "illustration",
+  "title": {
+    "zh": "小冷",
+    "en": "小冷 — Character illustration",
+    "ja": "小冷 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-20a9e77aec.webp",
+      "alt": "小冷"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 300
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-12",
+  "category": "illustration",
+  "title": {
+    "zh": "BD",
+    "en": "BD — Character illustration",
+    "ja": "BD — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-9e1f0542b5.webp",
+      "alt": "BD"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 230
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-17",
+  "category": "illustration",
+  "title": {
+    "zh": "初七",
+    "en": "初七 — Character illustration",
+    "ja": "初七 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-7f994aa0a8.webp",
+      "alt": "初七"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 270
+}

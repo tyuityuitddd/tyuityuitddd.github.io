@@ -1,0 +1,23 @@
+{
+  "slug": "wstream-logo",
+  "category": "design",
+  "title": {
+    "zh": "WSTREAM｜實況工具標誌",
+    "en": "WSTREAM — Streaming tool logo",
+    "ja": "WSTREAM｜配信ツールロゴ"
+  },
+  "description": {
+    "zh": "WSTREAM 實況裝飾工具的標誌設計。",
+    "en": "Logo design for the WSTREAM streaming decoration tool.",
+    "ja": "配信装飾ツール「WSTREAM」のロゴデザイン。"
+  },
+  "images": [
+    {
+      "src": "media/art-38cf673d4f.webp",
+      "alt": "WSTREAM實況工具的LOGO製作"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 110
+}

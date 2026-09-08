@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-03",
+  "category": "illustration",
+  "title": {
+    "zh": "林出七",
+    "en": "林出七 — Character illustration",
+    "ja": "林出七 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "全身角色插畫。",
+    "en": "Full-body character illustration.",
+    "ja": "全身キャラクターイラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-afb3b2f5e4.webp",
+      "alt": "林出七"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 150
+}

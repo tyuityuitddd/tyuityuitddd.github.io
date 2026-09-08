@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-04",
+  "category": "illustration",
+  "title": {
+    "zh": "海哥",
+    "en": "海哥 — Character illustration",
+    "ja": "海哥 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "全身角色插畫。",
+    "en": "Full-body character illustration.",
+    "ja": "全身キャラクターイラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-8f04402012.webp",
+      "alt": "海哥"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 160
+}

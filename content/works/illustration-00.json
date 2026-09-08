@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-00",
+  "category": "illustration",
+  "title": {
+    "zh": "不好說",
+    "en": "不好說 — Character illustration",
+    "ja": "不好說 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "全身角色插畫。",
+    "en": "Full-body character illustration.",
+    "ja": "全身キャラクターイラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-40519d3a21.webp",
+      "alt": "不好說"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 120
+}

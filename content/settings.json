@@ -1,0 +1,17 @@
+{
+  "name": "泰迪迪迪",
+  "brand": "TDDD",
+  "email": "tyuityuitddd@gmail.com",
+  "avatar": "media/art-96777b6a41.webp",
+  "bio": {
+    "zh": "我是一名自由接案創作者，專注角色插畫與視覺設計，曾為多位實況主製作貼圖與插圖。從角色的表情與個性，到遊戲和品牌的視覺呈現，我喜歡讓想法成為看得見的作品。",
+    "en": "I’m TDDD, a freelance illustrator and visual designer. I’ve created emotes and illustrations for many streamers. From a character’s expression and personality to visuals for games and brands, I enjoy turning ideas into images.",
+    "ja": "フリーランスでイラストとビジュアルデザインを制作している TDDD です。これまで多くの配信者のスタンプやイラストを手がけてきました。キャラクターの表情や個性から、ゲームやブランドのビジュアルまで、アイデアを目に見える作品にすることを大切にしています。"
+  },
+  "hero": [
+    "illustration-19",
+    "illustration-26",
+    "illustration-13",
+    "wuming-game"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-28",
+  "category": "illustration",
+  "title": {
+    "zh": "阿廉",
+    "en": "阿廉 — Character illustration",
+    "ja": "阿廉 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-1a4e64ffba.webp",
+      "alt": "阿廉"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 350
+}

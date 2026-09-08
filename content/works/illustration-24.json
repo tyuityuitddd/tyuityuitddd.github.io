@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-24",
+  "category": "illustration",
+  "title": {
+    "zh": "禁藥王2",
+    "en": "禁藥王2 — Character illustration",
+    "ja": "禁藥王2 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-b9c4b65bdd.webp",
+      "alt": "禁藥王2"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 320
+}

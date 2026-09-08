@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-20",
+  "category": "illustration",
+  "title": {
+    "zh": "威九",
+    "en": "威九 — Character illustration",
+    "ja": "威九 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-0749cfd377.webp",
+      "alt": "威九"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 290
+}

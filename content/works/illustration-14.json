@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-14",
+  "category": "illustration",
+  "title": {
+    "zh": "ruga",
+    "en": "ruga — Character illustration",
+    "ja": "ruga — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-c103a1af66.webp",
+      "alt": "ruga"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 240
+}

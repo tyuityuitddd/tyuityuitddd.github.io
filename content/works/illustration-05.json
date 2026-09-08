@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-05",
+  "category": "illustration",
+  "title": {
+    "zh": "老鷹V皮排版",
+    "en": "老鷹V皮排版 — Character illustration",
+    "ja": "老鷹V皮排版 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "全身角色插畫。",
+    "en": "Full-body character illustration.",
+    "ja": "全身キャラクターイラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-be9083670a.webp",
+      "alt": "老鷹V皮排版"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 50
+}

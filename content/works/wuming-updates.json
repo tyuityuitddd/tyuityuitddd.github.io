@@ -1,0 +1,119 @@
+{
+  "slug": "wuming-updates",
+  "category": "design",
+  "title": {
+    "zh": "無名小鎮｜更新公告",
+    "en": "WUMING — Update banners",
+    "ja": "WUMING｜アップデートバナー"
+  },
+  "description": {
+    "zh": "無名小鎮遊戲內容與活動更新的系列公告橫幅。",
+    "en": "A series of announcement banners for WUMING game updates and events.",
+    "ja": "WUMING のゲーム更新やイベントを伝える告知バナーシリーズ。"
+  },
+  "images": [
+    {
+      "src": "media/art-850f5a11f7.webp",
+      "alt": "雪人突入"
+    },
+    {
+      "src": "media/art-8d184eb2e7.webp",
+      "alt": "幫派領土更新"
+    },
+    {
+      "src": "media/art-9b0631ef44.webp",
+      "alt": "中秋月餅禮盒"
+    },
+    {
+      "src": "media/art-0ce751b278.webp",
+      "alt": "76車廠"
+    },
+    {
+      "src": "media/art-08ca6c4be2.webp",
+      "alt": "L’espoir Cafe"
+    },
+    {
+      "src": "media/art-a231903179.webp",
+      "alt": "公園更新"
+    },
+    {
+      "src": "media/art-ea1e011fd0.webp",
+      "alt": "地下室"
+    },
+    {
+      "src": "media/art-9f63493412.webp",
+      "alt": "婚禮"
+    },
+    {
+      "src": "media/art-0abd5e000b.webp",
+      "alt": "巧手天賦"
+    },
+    {
+      "src": "media/art-2cd42c85f5.webp",
+      "alt": "挖洞搶劫"
+    },
+    {
+      "src": "media/art-cba1c904ed.webp",
+      "alt": "無名批發訂購系統"
+    },
+    {
+      "src": "media/art-e7379557a0.webp",
+      "alt": "無名餐廳外送平板"
+    },
+    {
+      "src": "media/art-7a6425d4d0.webp",
+      "alt": "珠寶搶劫"
+    },
+    {
+      "src": "media/art-4f1345aafc.webp",
+      "alt": "老虎機"
+    },
+    {
+      "src": "media/art-615309177f.webp",
+      "alt": "船隻"
+    },
+    {
+      "src": "media/art-9a04a4efb3.webp",
+      "alt": "菸酒館更新"
+    },
+    {
+      "src": "media/art-1f338df4a8.webp",
+      "alt": "警局更新"
+    },
+    {
+      "src": "media/art-fb6e760264.webp",
+      "alt": "貓咖啟動"
+    },
+    {
+      "src": "media/art-85fc537c3c.webp",
+      "alt": "貓咖貓咪"
+    },
+    {
+      "src": "media/art-d50fce60eb.webp",
+      "alt": "貨船搶劫"
+    },
+    {
+      "src": "media/art-f4b5a1a0e4.webp",
+      "alt": "車廠更新"
+    },
+    {
+      "src": "media/art-35b1c29de2.webp",
+      "alt": "酒吧更新"
+    },
+    {
+      "src": "media/art-dedd41711f.webp",
+      "alt": "餐廳資產"
+    },
+    {
+      "src": "media/art-39f3b44625.webp",
+      "alt": "餐廳資產2"
+    },
+    {
+      "src": "media/art-34090ccde0.webp",
+      "alt": "魚中魚"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 60
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-18",
+  "category": "illustration",
+  "title": {
+    "zh": "初七朋友",
+    "en": "初七朋友 — Character illustration",
+    "ja": "初七朋友 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-0a3da03cef.webp",
+      "alt": "初七朋友"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 280
+}

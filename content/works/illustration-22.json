@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-22",
+  "category": "illustration",
+  "title": {
+    "zh": "我英荼毘",
+    "en": "我英荼毘 — Character illustration",
+    "ja": "我英荼毘 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-84ddaa1f6f.webp",
+      "alt": "我英荼毘"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 90
+}

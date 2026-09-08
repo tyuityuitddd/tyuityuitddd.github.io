@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-19",
+  "category": "illustration",
+  "title": {
+    "zh": "女兒大圖",
+    "en": "女兒大圖 — Character illustration",
+    "ja": "女兒大圖 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-90e7b7bde1.webp",
+      "alt": "女兒大圖"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 0
+}

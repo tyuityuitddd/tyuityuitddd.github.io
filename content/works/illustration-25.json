@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-25",
+  "category": "illustration",
+  "title": {
+    "zh": "羋羋",
+    "en": "羋羋 — Character illustration",
+    "ja": "羋羋 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-6af5748e07.webp",
+      "alt": "羋羋"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 330
+}

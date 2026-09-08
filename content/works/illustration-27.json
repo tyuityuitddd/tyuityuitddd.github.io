@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-27",
+  "category": "illustration",
+  "title": {
+    "zh": "阿全",
+    "en": "阿全 — Character illustration",
+    "ja": "阿全 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-526fbf3d6e.webp",
+      "alt": "阿全"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 340
+}

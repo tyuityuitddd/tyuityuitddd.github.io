@@ -1,0 +1,23 @@
+{
+  "slug": "illustration-09",
+  "category": "illustration",
+  "title": {
+    "zh": "角色習作 10",
+    "en": "角色習作 10 — Character illustration",
+    "ja": "角色習作 10 — キャラクターイラスト"
+  },
+  "description": {
+    "zh": "角色肖像與半身插畫。",
+    "en": "Character portrait illustration.",
+    "ja": "キャラクターポートレート・上半身イラスト。"
+  },
+  "images": [
+    {
+      "src": "media/art-01d8014705.webp",
+      "alt": "10-2"
+    }
+  ],
+  "video": "",
+  "published": true,
+  "order": 200
+}
