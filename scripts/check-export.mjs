@@ -11,8 +11,10 @@ for(const page of pages){
  const file=path.join(root,page);assert(fs.existsSync(file),`Missing exported page ${page}`);
  const html=fs.readFileSync(file,'utf8');
  assert(!html.includes('Untitled site'));assert(!html.includes('Your site is taking shape'));
- for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)){
-  const raw=match[1];if(!raw.startsWith('/')||raw.startsWith('//'))continue;
+ const references=[...html.matchAll(/(?:src|href)="([^"#]+)"/g)].map(match=>match[1]);
+ for(const match of html.matchAll(/srcset="([^"]+)"/gi))references.push(...match[1].split(',').map(candidate=>candidate.trim().split(/\s+/)[0]));
+ for(const raw of references){
+  if(!raw.startsWith('/')||raw.startsWith('//'))continue;
   const url=new URL(raw,'https://portfolio.example');
   assert(!prefix||url.pathname.startsWith(prefix+'/'),`Wrong base path in ${page}: ${raw}`);
   const relative=decodeURIComponent(url.pathname.slice(prefix.length)).replace(/^\//,'');

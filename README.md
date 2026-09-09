@@ -25,7 +25,7 @@ npm run dev
 4. 在 GitHub 的 Settings → Pages 將 Source 選為 GitHub Actions。
 5. 在 Actions 執行「Publish portfolio to GitHub Pages」。後續每次更新 `main` 都會自動重建並發佈。
 
-已確認 GitHub 帳號為 tyuityuitddd；儲存庫與網站尚未公開發佈。
+網站已發佈：https://tyuityuitddd.github.io/ 。
 
 ## 使用管理後台
 
@@ -47,7 +47,7 @@ npm run dev
 ## 更新素材
 
 - 建議新增圖片使用 JPG、PNG 或 WebP，長邊約 1600–2200 px，單張盡量控制在 2 MB 以內。
-- 本次素材已產生最佳化 WebP 與縮圖；後續從 CMS 新上傳的圖片會直接使用上傳版本，不會自動壓縮。
+- 每次預覽、檢查與發佈都會自動產生 400／800／1400px WebP 版本。瀏覽器依實際顯示大小與螢幕解析度選圖；放大查看才載入高解析度版本。新增的靜態 JPG、PNG 也會自動轉成 WebP，保留透明背景及原始上傳檔；動態 GIF／WebP 保持動畫原檔。
 - 原圖不必刪除，可保留在本機「素材」資料夾。
 - `published: false` 只代表網站不展示；公開儲存庫裡的檔案與歷史紀錄仍然公開。
 - 首頁四張圖可在「個人資訊與首頁」填入四個已公開作品代號來調整。
@@ -69,9 +69,15 @@ npm run check
 npm run build
 ```
 
-`check` 檢查型別、素材、作品代號、首頁參照及影片網址。`build` 產生靜態網頁並驗證作品頁、圖片及連結；輸出位於 `dist/client/`。
+`check` 檢查型別、素材、作品代號、首頁參照、影片網址及新圖片自動轉換。`build` 產生靜態網頁並驗證作品頁、圖片及連結；輸出位於 `dist/client/`。
 
 網站使用 Sites 產生的 React / vinext 專案，採用純靜態 GitHub Pages 輸出。此版沒有需要在網頁伺服器執行的登入或資料庫；編輯由外部 Pages CMS 處理。
 
-已檢查：38 個靜態頁面、553 個本機連結與素材路徑。尚未執行瀏覽器點擊／手機視覺驗收，尚未完成 GitHub 與 Pages CMS 線上整合驗證。
+已檢查：38 個靜態頁面、927 個本機連結與素材路徑（含響應式圖片）。尚未執行瀏覽器點擊／手機視覺驗收，GitHub Pages 已發佈；Pages CMS 的登入授權與完整編輯流程仍待驗證。
 
+
+## 圖片最佳化（2026-09-09）
+
+69 張 400px WebP 版本合計 872,794 bytes；原先縮圖合計 2,236,178 bytes，減少約 61%。首頁四張主視覺的小尺寸版本共 59,892 bytes。這是圖片檔案大小比較，不是載入時間實測；實際下載版本取決於螢幕寬度與像素密度。
+
+最佳化輸出在 `public/optimized/`，對照資料在 `generated/images.json`；它們由建置自動產生，不需手動上傳或修改。原始上傳圖片仍放在 `public/media/`。

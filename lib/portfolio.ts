@@ -1,9 +1,9 @@
 export type Language = 'zh' | 'en' | 'ja';
 export type Translation = { zh: string; en: string; ja: string };
 export type Category = 'illustration' | 'game' | 'design';
-export type Artwork = { src: string; alt: string; thumbnail?: string; width?: number; height?: number };
+export type Artwork = { src: string; alt: string; thumbnail?: string; width?: number; height?: number; variants?: {src:string;width:number;height:number;bytes:number}[] };
 export type Work = { slug: string; title: Translation; description: Translation; category: Category; images: Artwork[]; video?: string; order: number; published: boolean };
-export type Settings = { name: string; brand: string; email: string; avatar: string; bio: Translation; hero: string[] };
+export type Settings = { name: string; brand: string; email: string; avatar: string; avatarImage?: Artwork; bio: Translation; hero: string[] };
 export const basePath = '';
 export function localUrl(path: string) { return `${basePath}/${path.replace(/^\/+/, '')}`; }
 export function mediaUrl(path: string) { return /^https:\/\//.test(path) ? path : localUrl(path); }
