@@ -2,22 +2,23 @@
   "slug": "illustration-14",
   "category": "illustration",
   "title": {
-    "zh": "ruga",
-    "en": "ruga — Character illustration",
-    "ja": "ruga — キャラクターイラスト"
+    "zh": "委託插畫 14",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "角色肖像與半身插畫。",
-    "en": "Character portrait illustration.",
-    "ja": "キャラクターポートレート・上半身イラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-c103a1af66.webp",
-      "alt": "ruga"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 240
+  "order": 240,
+  "showText": false
 }

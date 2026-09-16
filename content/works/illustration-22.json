@@ -2,22 +2,23 @@
   "slug": "illustration-22",
   "category": "illustration",
   "title": {
-    "zh": "我英荼毘",
-    "en": "我英荼毘 — Character illustration",
-    "ja": "我英荼毘 — キャラクターイラスト"
+    "zh": "委託插畫 22",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "角色肖像與半身插畫。",
-    "en": "Character portrait illustration.",
-    "ja": "キャラクターポートレート・上半身イラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-84ddaa1f6f.webp",
-      "alt": "我英荼毘"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 90
+  "order": 90,
+  "showText": false
 }

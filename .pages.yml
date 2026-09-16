@@ -40,15 +40,20 @@ content:
             - { name: illustration, label: 插畫 }
             - { name: game, label: 遊戲 }
             - { name: design, label: 設計 }
+      - name: showText
+        label: 顯示名稱與介紹
+        type: boolean
+        default: false
+        description: 只想展示圖片就關閉；遊戲或設計專案要顯示文字時開啟。
       - name: title
-        label: 作品名稱
+        label: 作品名稱（關閉顯示時僅供管理）
         type: object
         fields:
           - { name: zh, label: 繁體中文, type: string, required: true }
           - { name: en, label: English, type: string }
           - { name: ja, label: 日本語, type: string }
       - name: description
-        label: 作品介紹
+        label: 作品介紹（選填）
         type: object
         fields:
           - { name: zh, label: 繁體中文, type: text }

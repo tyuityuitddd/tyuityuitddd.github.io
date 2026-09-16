@@ -2,22 +2,23 @@
   "slug": "illustration-03",
   "category": "illustration",
   "title": {
-    "zh": "林出七",
-    "en": "林出七 — Character illustration",
-    "ja": "林出七 — キャラクターイラスト"
+    "zh": "委託插畫 03",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "全身角色插畫。",
-    "en": "Full-body character illustration.",
-    "ja": "全身キャラクターイラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-afb3b2f5e4.webp",
-      "alt": "林出七"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 150
+  "order": 150,
+  "showText": false
 }

@@ -2,22 +2,23 @@
   "slug": "illustration-04",
   "category": "illustration",
   "title": {
-    "zh": "海哥",
-    "en": "海哥 — Character illustration",
-    "ja": "海哥 — キャラクターイラスト"
+    "zh": "委託插畫 04",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "全身角色插畫。",
-    "en": "Full-body character illustration.",
-    "ja": "全身キャラクターイラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-8f04402012.webp",
-      "alt": "海哥"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 160
+  "order": 160,
+  "showText": false
 }

@@ -2,22 +2,23 @@
   "slug": "illustration-26",
   "category": "illustration",
   "title": {
-    "zh": "贊尼",
-    "en": "贊尼 — Character illustration",
-    "ja": "贊尼 — キャラクターイラスト"
+    "zh": "委託插畫 26",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "角色肖像與半身插畫。",
-    "en": "Character portrait illustration.",
-    "ja": "キャラクターポートレート・上半身イラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-c3f644c984.webp",
-      "alt": "贊尼.TDpng"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 10
+  "order": 10,
+  "showText": false
 }

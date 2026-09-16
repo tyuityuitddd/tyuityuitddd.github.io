@@ -2,22 +2,23 @@
   "slug": "illustration-07",
   "category": "illustration",
   "title": {
-    "zh": "角色習作 08",
-    "en": "角色習作 08 — Character illustration",
-    "ja": "角色習作 08 — キャラクターイラスト"
+    "zh": "委託插畫 07",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "角色肖像與半身插畫。",
-    "en": "Character portrait illustration.",
-    "ja": "キャラクターポートレート・上半身イラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-66cce1911a.webp",
-      "alt": "00324"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 180
+  "order": 180,
+  "showText": false
 }

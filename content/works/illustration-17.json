@@ -2,22 +2,23 @@
   "slug": "illustration-17",
   "category": "illustration",
   "title": {
-    "zh": "初七",
-    "en": "初七 — Character illustration",
-    "ja": "初七 — キャラクターイラスト"
+    "zh": "委託插畫 17",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "角色肖像與半身插畫。",
-    "en": "Character portrait illustration.",
-    "ja": "キャラクターポートレート・上半身イラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-7f994aa0a8.webp",
-      "alt": "初七"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 270
+  "order": 270,
+  "showText": false
 }

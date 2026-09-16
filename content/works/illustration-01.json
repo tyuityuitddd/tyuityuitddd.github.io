@@ -2,22 +2,23 @@
   "slug": "illustration-01",
   "category": "illustration",
   "title": {
-    "zh": "戳戳戳",
-    "en": "戳戳戳 — Character illustration",
-    "ja": "戳戳戳 — キャラクターイラスト"
+    "zh": "委託插畫 01",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "全身角色插畫。",
-    "en": "Full-body character illustration.",
-    "ja": "全身キャラクターイラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-d3f7772cd8.webp",
-      "alt": "戳戳戳"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 130
+  "order": 130,
+  "showText": false
 }

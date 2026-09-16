@@ -2,22 +2,23 @@
   "slug": "illustration-18",
   "category": "illustration",
   "title": {
-    "zh": "初七朋友",
-    "en": "初七朋友 — Character illustration",
-    "ja": "初七朋友 — キャラクターイラスト"
+    "zh": "委託插畫 18",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "角色肖像與半身插畫。",
-    "en": "Character portrait illustration.",
-    "ja": "キャラクターポートレート・上半身イラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-0a3da03cef.webp",
-      "alt": "初七朋友"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 280
+  "order": 280,
+  "showText": false
 }

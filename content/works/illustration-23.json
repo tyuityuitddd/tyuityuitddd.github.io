@@ -2,22 +2,23 @@
   "slug": "illustration-23",
   "category": "illustration",
   "title": {
-    "zh": "瑞奇雙人",
-    "en": "瑞奇雙人 — Character illustration",
-    "ja": "瑞奇雙人 — キャラクターイラスト"
+    "zh": "委託插畫 23",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "角色肖像與半身插畫。",
-    "en": "Character portrait illustration.",
-    "ja": "キャラクターポートレート・上半身イラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-f662179aa0.webp",
-      "alt": "瑞奇雙人"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 310
+  "order": 310,
+  "showText": false
 }

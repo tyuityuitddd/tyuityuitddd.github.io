@@ -2,22 +2,23 @@
   "slug": "illustration-12",
   "category": "illustration",
   "title": {
-    "zh": "BD",
-    "en": "BD — Character illustration",
-    "ja": "BD — キャラクターイラスト"
+    "zh": "委託插畫 12",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "角色肖像與半身插畫。",
-    "en": "Character portrait illustration.",
-    "ja": "キャラクターポートレート・上半身イラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-9e1f0542b5.webp",
-      "alt": "BD"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 230
+  "order": 230,
+  "showText": false
 }

@@ -2,8 +2,10 @@ export type Language = 'zh' | 'en' | 'ja';
 export type Translation = { zh: string; en: string; ja: string };
 export type Category = 'illustration' | 'game' | 'design';
 export type Artwork = { src: string; alt: string; thumbnail?: string; width?: number; height?: number; variants?: {src:string;width:number;height:number;bytes:number}[] };
-export type Work = { slug: string; title: Translation; description: Translation; category: Category; images: Artwork[]; video?: string; order: number; published: boolean };
+export type Work = { slug: string; title: Translation; description: Translation; category: Category; images: Artwork[]; video?: string; order: number; published: boolean; showText?: boolean };
 export type Settings = { name: string; brand: string; email: string; avatar: string; avatarImage?: Artwork; bio: Translation; hero: string[] };
+export function showsWorkText(work: Work) { return work.showText ?? work.category !== 'illustration'; }
+export function workLabel(work: Work, lang: Language) { return showsWorkText(work) ? translated(work.title, lang) : copy[lang][work.category]; }
 export const basePath = '';
 export function localUrl(path: string) { return `${basePath}/${path.replace(/^\/+/, '')}`; }
 export function mediaUrl(path: string) { return /^https:\/\//.test(path) ? path : localUrl(path); }

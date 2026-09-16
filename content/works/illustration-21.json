@@ -2,22 +2,23 @@
   "slug": "illustration-21",
   "category": "illustration",
   "title": {
-    "zh": "小冷",
-    "en": "小冷 — Character illustration",
-    "ja": "小冷 — キャラクターイラスト"
+    "zh": "委託插畫 21",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "角色肖像與半身插畫。",
-    "en": "Character portrait illustration.",
-    "ja": "キャラクターポートレート・上半身イラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-20a9e77aec.webp",
-      "alt": "小冷"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 300
+  "order": 300,
+  "showText": false
 }

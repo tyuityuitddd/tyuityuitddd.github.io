@@ -2,22 +2,23 @@
   "slug": "illustration-06",
   "category": "illustration",
   "title": {
-    "zh": "阿蓮",
-    "en": "阿蓮 — Character illustration",
-    "ja": "阿蓮 — キャラクターイラスト"
+    "zh": "委託插畫 06",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "全身角色插畫。",
-    "en": "Full-body character illustration.",
-    "ja": "全身キャラクターイラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-c04f9725a9.webp",
-      "alt": "阿蓮"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 170
+  "order": 170,
+  "showText": false
 }

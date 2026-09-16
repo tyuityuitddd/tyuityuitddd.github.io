@@ -2,22 +2,23 @@
   "slug": "illustration-27",
   "category": "illustration",
   "title": {
-    "zh": "阿全",
-    "en": "阿全 — Character illustration",
-    "ja": "阿全 — キャラクターイラスト"
+    "zh": "委託插畫 27",
+    "en": "Commissioned illustration",
+    "ja": "依頼イラスト"
   },
   "description": {
-    "zh": "角色肖像與半身插畫。",
-    "en": "Character portrait illustration.",
-    "ja": "キャラクターポートレート・上半身イラスト。"
+    "zh": "",
+    "en": "",
+    "ja": ""
   },
   "images": [
     {
       "src": "media/art-526fbf3d6e.webp",
-      "alt": "阿全"
+      "alt": "委託角色插畫 1"
     }
   ],
   "video": "",
   "published": true,
-  "order": 340
+  "order": 340,
+  "showText": false
 }
