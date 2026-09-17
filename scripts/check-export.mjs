@@ -5,7 +5,8 @@ import assert from 'node:assert/strict';
 const root=path.resolve('dist/client');
 const prefix='';
 const works=fs.readdirSync('content/works').filter(f=>f.endsWith('.json')).map(f=>JSON.parse(fs.readFileSync(path.join('content/works',f),'utf8'))).filter(w=>w.published&&w.images.length);
-const pages=['index.html','404.html',...works.map(w=>`work/${w.slug}/index.html`)];
+const posts=fs.readdirSync('content/journal').filter(f=>f.endsWith('.json')).map(f=>JSON.parse(fs.readFileSync(path.join('content/journal',f),'utf8'))).filter(p=>p.published);
+const pages=['index.html','404.html','journal/index.html',...posts.map(p=>`journal/${p.slug}/index.html`),...works.map(w=>`work/${w.slug}/index.html`)];
 let checked=0;
 for(const page of pages){
  const file=path.join(root,page);assert(fs.existsSync(file),`Missing exported page ${page}`);

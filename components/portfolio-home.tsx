@@ -3,10 +3,12 @@ import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Header, Footer, useLanguage } from './site-chrome';
+import { JournalPreview } from './journal';
+import type { JournalPost } from '@/lib/journal';
 import { ArtworkImage } from './artwork-image';
 import { copy, translated, localUrl, showsWorkText, workLabel, type Work, type Settings, type Category } from '@/lib/portfolio';
 
-export default function PortfolioHome({works,settings}:{works:Work[];settings:Settings}) {
+export default function PortfolioHome({works,settings,posts}:{works:Work[];settings:Settings;posts:JournalPost[]}) {
  const [lang, changeLanguage] = useLanguage();
  const [category,setCategory] = useState<Category|'all'>('all');
  const [limit,setLimit] = useState(12);
@@ -42,6 +44,7 @@ export default function PortfolioHome({works,settings}:{works:Work[];settings:Se
  {filtered.length===0&&<p className="empty-state">{t.empty}</p>}
  {limit<filtered.length&&<div className="load-more"><Button className="more-button" variant="outline" onClick={()=>setLimit(n=>n+12)}>{t.more}<ArrowDown size={17}/></Button><span>{Math.min(limit,filtered.length)} / {filtered.length}</span></div>}
  </section>
+ <JournalPreview posts={posts} lang={lang}/>
  <section className="about section-wrap" id="about"><div className="about-visual"><ArtworkImage image={settings.avatarImage||{src:settings.avatar,alt:settings.name}} sizes="(max-width: 760px) 300px, 440px" alt={settings.name} loading="lazy"/><span className="about-sign">TDDD<span>✳</span></span><span className="about-label">THE PERSON BEHIND THE PIXELS.</span></div><div className="about-copy"><p className="eyebrow">02 / BEHIND THE WORK</p><h2>{t.aboutTitle}</h2><p className="bio">{translated(settings.bio,lang)}</p><div className="service-list">{t.services.map((service,i)=><div key={service}><span>0{i+1}</span><p>{service}</p><ArrowUpRight size={18}/></div>)}</div></div></section>
  <section className="contact section-wrap"><p className="eyebrow">03 / LET’S CREATE SOMETHING</p><h2>{t.contactTitle}</h2><div className="contact-bottom"><p>{t.contact}</p><a href={`mailto:${settings.email}`} className="contact-email">{settings.email}<ArrowUpRight size={26}/></a></div></section>
  </main><Footer lang={lang}/></div>;

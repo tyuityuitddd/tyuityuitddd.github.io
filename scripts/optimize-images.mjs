@@ -15,6 +15,12 @@ for (const file of await fs.readdir('content/works')) {
   const work = JSON.parse(await fs.readFile(path.join('content/works', file), 'utf8'));
   for (const image of work.images || []) sources.add(image.src);
 }
+for (const file of await fs.readdir('content/journal').catch(error=>{if(error.code==='ENOENT')return [];throw error;})) {
+  if(!file.endsWith('.json'))continue;
+  const post=JSON.parse(await fs.readFile(path.join('content/journal',file),'utf8'));
+  if(post.cover)sources.add(post.cover);
+  for(const section of post.sections||[])if(section.image)sources.add(section.image);
+}
 await fs.mkdir(output, { recursive: true });
 await fs.mkdir('generated', { recursive: true });
 const manifest = {};

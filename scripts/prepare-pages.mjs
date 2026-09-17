@@ -1,19 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
-
-// vinext exports flat .html routes. GitHub Pages also needs directory indexes
-// so shared /work/name/ URLs resolve without a server-side router.
-const root = path.resolve('dist/client');
-const workRoot = path.join(root, 'work');
-let count = 0;
-for (const entry of fs.readdirSync(workRoot)) {
-  if (!entry.endsWith('.html')) continue;
-  const slug = entry.slice(0, -5);
-  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw new Error(`Unsafe work slug: ${slug}`);
-  const destination = path.join(workRoot, slug);
-  fs.mkdirSync(destination, { recursive: true });
-  fs.copyFileSync(path.join(workRoot, entry), path.join(destination, 'index.html'));
-  count++;
+const root=path.resolve('dist/client');
+let count=0;
+function prepare(directory){
+ for(const entry of fs.readdirSync(directory,{withFileTypes:true})){
+  const file=path.join(directory,entry.name);
+  if(entry.isDirectory()){prepare(file);continue;}
+  if(!entry.name.endsWith('.html')||['index.html','404.html'].includes(entry.name))continue;
+  const destination=file.slice(0,-5);
+  fs.mkdirSync(destination,{recursive:true});
+  fs.copyFileSync(file,path.join(destination,'index.html'));count++;
+ }
 }
-fs.writeFileSync(path.join(root, '.nojekyll'), '');
-console.log(`Prepared ${count} GitHub Pages project routes.`);
+prepare(root);
+fs.writeFileSync(path.join(root,'.nojekyll'),'');
+console.log(`Prepared ${count} GitHub Pages routes.`);

@@ -97,3 +97,54 @@ content:
           min: 4
           max: 4
         description: 填入作品網址代號，依序為左上、右上、左下、右下。
+
+  - name: journal
+    label: Godot 開發日誌
+    type: collection
+    path: content/journal
+    format: json
+    filename: '{fields.slug}.json'
+    view:
+      primary: title
+      sort: date
+      order: desc
+      fields: [title, date, published]
+    fields:
+      - { name: slug, label: 文章網址代號, type: string, required: true, pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$' }
+      - { name: title, label: 文章標題, type: string, required: true }
+      - { name: excerpt, label: 列表摘要, type: text, required: true }
+      - name: date
+        label: 發文日期（YYYY-MM-DD）
+        type: string
+        required: true
+        pattern: '^\d{4}-\d{2}-\d{2}$'
+        description: 填寫實際發文日期，例如 2026-09-17。日期只用於排序，不是預約發文。
+      - { name: updated, label: 最後修改日期（選填 YYYY-MM-DD）, type: string }
+      - name: published
+        label: 公開文章
+        type: boolean
+        default: false
+        description: 關閉是草稿，不會出現在網站；公開 GitHub 儲存庫內的檔案仍可被查看。
+      - name: tags
+        label: 標籤
+        type: string
+        list: true
+      - { name: cover, label: 封面圖片（選填）, type: image }
+      - { name: coverAlt, label: 封面簡短說明, type: string }
+      - name: sections
+        label: 文章段落（可新增與調整順序）
+        type: object
+        required: true
+        list:
+          min: 1
+          collapsible: true
+        fields:
+          - { name: heading, label: 小標題（選填）, type: string }
+          - name: text
+            label: 內文
+            type: text
+            description: 直接輸入文字，空一行分段。不需要寫程式或 Markdown。
+          - { name: image, label: 進度截圖（選填）, type: image }
+          - { name: alt, label: 圖片簡短說明, type: string }
+          - { name: caption, label: 圖片下方文字（選填）, type: string }
+          - { name: video, label: YouTube 或 Vimeo 影片網址（選填）, type: string }
