@@ -118,8 +118,13 @@ content:
         type: string
         required: true
         pattern: '^\d{4}-\d{2}-\d{2}$'
-        description: 填寫實際發文日期，例如 2026-09-17。日期只用於排序，不是預約發文。
+        description: 一般文章填發文日期；回顧文章填有依據的階段日期，並另填補記日期。日期用於排序，不是預約發文。
       - { name: updated, label: 最後修改日期（選填 YYYY-MM-DD）, type: string }
+      - { name: retrospective, label: 這是事後整理的開發回顧, type: boolean, default: false }
+      - { name: recordedOn, label: 補記日期（回顧文章填 YYYY-MM-DD）, type: string }
+      - { name: period, label: 階段日期顯示（選填，例如 9 月中旬）, type: string }
+      - { name: sourceNote, label: 文末紀錄說明（選填）, type: text }
+
       - name: published
         label: 公開文章
         type: boolean

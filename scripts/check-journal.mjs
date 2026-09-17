@@ -12,6 +12,7 @@ for(const file of fs.readdirSync('content/journal').filter(f=>f.endsWith('.json'
  assert(typeof post.title==='string'&&post.title.trim());assert(typeof post.excerpt==='string'&&post.excerpt.trim());
  assert(validDate(post.date),`Invalid date: ${post.slug}`);
  if(post.updated){assert(validDate(post.updated));assert(post.updated>=post.date);}
+ if(post.retrospective){assert(validDate(post.recordedOn));assert(post.recordedOn>=post.date);}
  image(post.cover);if(post.cover)assert(post.coverAlt?.trim(),`Missing cover description: ${post.slug}`);
  assert(Array.isArray(post.sections)&&post.sections.length);
  if(post.tags)assert(Array.isArray(post.tags)&&post.tags.every(tag=>typeof tag==='string'));
