@@ -41,3 +41,5 @@ next-env.d.ts
 
 /generated/
 /public/optimized/
+/.agents/
+/.impeccable/

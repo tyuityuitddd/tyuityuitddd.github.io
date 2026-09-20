@@ -1,5 +1,6 @@
 import './globals.css';
 import './motion.css';
+import './framebook.css';
 import { localUrl } from '@/lib/portfolio';
 import { SiteMotion } from '@/components/site-motion';
 export const metadata = {

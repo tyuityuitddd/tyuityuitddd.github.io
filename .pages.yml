@@ -91,7 +91,7 @@ content:
           - { name: en, label: English, type: text }
           - { name: ja, label: 日本語, type: text }
       - name: hero
-        label: 首頁四張主視覺的作品代號
+        label: 首頁主視覺作品代號（顯示前兩個已公開作品）
         type: string
         list:
           min: 4

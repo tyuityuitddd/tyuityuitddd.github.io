@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { chooseMotion, motionAllowed } from '@/lib/motion';
+import { Pause, Play } from 'lucide-react';
 
 // Content is visible without JavaScript. Entrance animations are applied only
 // after intersection, so loading failures cannot leave artwork hidden.
@@ -35,6 +36,13 @@ export function SiteMotion() {
     let pointerVisible = false;
     let x = 0, y = 0, px = 0, py = 0;
     let magnet: HTMLElement | null = null;
+    let tilted: HTMLElement | null = null;
+
+    const clearTilt = () => {
+      tilted?.style.removeProperty('--card-rx');
+      tilted?.style.removeProperty('--card-ry');
+      tilted = null;
+    };
 
     const clearMagnet = () => {
       magnet?.style.removeProperty('translate');
@@ -47,6 +55,7 @@ export function SiteMotion() {
       root.style.removeProperty('--pointer-x');
       root.style.removeProperty('--pointer-y');
       clearMagnet();
+      clearTilt();
     };
     const render = () => {
       frame = 0;
@@ -57,7 +66,7 @@ export function SiteMotion() {
       px += (x - px) * 0.18;
       py += (y - py) * 0.18;
       if (glow.current) glow.current.style.transform = `translate3d(${px}px,${py}px,0)`;
-      if (cursor.current) cursor.current.style.transform = `translate3d(${x + 22}px,${y + 22}px,0)`;
+      if (cursor.current) cursor.current.style.transform = `translate3d(${Math.min(x + 22, innerWidth - 74)}px,${Math.min(y + 22, innerHeight - 50)}px,0)`;
       root.style.setProperty('--pointer-x', `${(px / innerWidth - 0.5) * 52}px`);
       root.style.setProperty('--pointer-y', `${(py / innerHeight - 0.5) * 40}px`);
       if (Math.abs(x - px) + Math.abs(y - py) > 0.2) frame = requestAnimationFrame(render);
@@ -71,10 +80,17 @@ export function SiteMotion() {
       pointerVisible = true;
       glow.current?.classList.add('is-active');
       const target = event.target instanceof Element ? event.target : null;
-      const card = target?.closest('.work-card');
+      const card = target?.closest<HTMLElement>('.work-card, .hero-art');
+      const nextTilt = target?.closest<HTMLElement>('.work-card') || null;
+      if (nextTilt !== tilted) { clearTilt(); tilted = nextTilt; }
+      if (tilted) {
+        const bounds = tilted.getBoundingClientRect();
+        tilted.style.setProperty('--card-rx', `${(0.5 - (y-bounds.top)/bounds.height)*5}deg`);
+        tilted.style.setProperty('--card-ry', `${((x-bounds.left)/bounds.width-0.5)*7}deg`);
+      }
       cursor.current?.classList.toggle('is-active', !!card);
       if (card && cursor.current) {
-        const label = root.lang === 'ja' ? '見る ↗' : root.lang === 'en' ? 'VIEW ↗' : '查看 ↗';
+        const label = root.lang === 'ja' ? '見る' : root.lang === 'en' ? 'VIEW' : '查看';
         if (cursor.current.textContent !== label) cursor.current.textContent = label;
       }
       const next = target?.closest<HTMLElement>('.hero-copy .pill-link, .contact-email') || null;
@@ -91,6 +107,7 @@ export function SiteMotion() {
       // Do not leave a card hint over a different section after scrolling.
       cursor.current?.classList.remove('is-active');
       clearMagnet();
+      clearTilt();
       schedule();
     };
     const onVisibility = () => {
@@ -136,10 +153,15 @@ export function SiteMotion() {
           if (element.matches('.about-copy')) offset = 'translateX(28px)';
           if (element.matches('.contact > h2')) offset = 'translateY(36px)';
           const desktop = fine.matches;
-          const animation = element.animate([
-            { opacity: 0, transform: desktop ? offset : 'none' },
+          const artwork = element.matches('.work-card, .about-visual, .detail-figure');
+          const frames: Keyframe[] = artwork ? [
+            { opacity: .35, clipPath: 'inset(0 0 16% 0)', transform: 'translateY(38px)' },
+            { opacity: 1, clipPath: 'inset(0 0 -12% 0)', transform: 'none' },
+          ] : [
+            { opacity: 0, transform: desktop ? offset : 'translateY(12px)' },
             { opacity: 1, transform: 'none' },
-          ], { duration: desktop ? 680 : 350, delay: desktop ? (order++ % 3) * 70 : 0, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'backwards' });
+          ];
+          const animation = element.animate(frames, { duration: artwork ? 950 : 650, delay: (order++ % 2) * 90, easing: 'cubic-bezier(.16,1,.3,1)', fill: 'backwards' });
           active.set(element, animation);
           animation.onfinish = () => active.delete(element);
         }
@@ -207,7 +229,7 @@ export function SiteMotion() {
     aria-label={enabled ? labels.stop : labels.start}
     title={!enabled && systemDefault ? labels.system : enabled ? labels.stop : labels.start}
     disabled={enabled === null} onClick={() => chooseMotion(!enabled)}>
-    <span aria-hidden="true">{enabled ? '✳' : '▷'}</span>
+    <span aria-hidden="true">{enabled ? <Pause size={15}/> : <Play size={15}/>}</span>
     {enabled === null ? labels.loading : enabled ? labels.on : labels.off}
   </button></>;
 }
