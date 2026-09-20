@@ -4,6 +4,7 @@ import { ArrowUpRight, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Header, Footer, useLanguage } from './site-chrome';
 import { JournalPreview } from './journal';
+import { motionAllowed } from '@/lib/motion';
 import type { JournalPost } from '@/lib/journal';
 import { ArtworkImage } from './artwork-image';
 import { copy, translated, localUrl, showsWorkText, workLabel, type Work, type Settings, type Category } from '@/lib/portfolio';
@@ -19,10 +20,10 @@ export default function PortfolioHome({works,settings,posts}:{works:Work[];setti
  useEffect(() => {
   let frame=0;
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  const update=()=>{frame=0;const el=hero.current;if(!el)return;const distance=el.offsetHeight-innerHeight;const p=reduced.matches||distance<=0?0:Math.max(0,Math.min(1,-el.getBoundingClientRect().top/distance));el.style.setProperty('--progress',String(p));};
+  const update=()=>{frame=0;const el=hero.current;if(!el)return;const distance=el.offsetHeight-innerHeight;const p=!motionAllowed()||distance<=0?0:Math.max(0,Math.min(1,-el.getBoundingClientRect().top/distance));el.style.setProperty('--progress',String(p));};
   const scroll=()=>{if(!frame)frame=requestAnimationFrame(update)};
-  update();addEventListener('scroll',scroll,{passive:true});addEventListener('resize',scroll);reduced.addEventListener('change',scroll);
-  return()=>{removeEventListener('scroll',scroll);removeEventListener('resize',scroll);reduced.removeEventListener('change',scroll);cancelAnimationFrame(frame)};
+  update();addEventListener('scroll',scroll,{passive:true});addEventListener('resize',scroll);addEventListener('tddd-motion-change',scroll);reduced.addEventListener('change',scroll);
+  return()=>{removeEventListener('scroll',scroll);removeEventListener('resize',scroll);removeEventListener('tddd-motion-change',scroll);reduced.removeEventListener('change',scroll);cancelAnimationFrame(frame)};
  },[]);
  useEffect(()=>{document.title=lang==='zh'?'泰迪迪迪 TDDD — 插畫・遊戲・視覺設計':lang==='en'?'TDDD — Illustration, Games & Visual Design':'TDDD — イラスト・ゲーム・ビジュアルデザイン'},[lang]);
  return <div id="top"><Header lang={lang} onLanguage={changeLanguage}/><main>

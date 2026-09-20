@@ -2,11 +2,12 @@
 .motion-layer{position:fixed;inset:0;z-index:25;pointer-events:none;overflow:hidden;contain:strict}
 .pointer-glow,.work-cursor{position:absolute;top:0;left:0;opacity:0;transition:opacity .3s;pointer-events:none}
 .pointer-glow{width:1px;height:1px}
-.pointer-glow::before{content:"";position:absolute;width:520px;height:520px;left:-260px;top:-260px;background:radial-gradient(circle,rgba(199,244,125,.085),rgba(199,244,125,.025) 38%,transparent 70%)}
+.pointer-glow::before{content:"";position:absolute;width:520px;height:520px;left:-260px;top:-260px;background:radial-gradient(circle,rgba(199,244,125,.14),rgba(199,244,125,.035) 38%,transparent 70%)}
+.pointer-glow::after{content:"";position:absolute;left:-16px;top:-16px;width:32px;height:32px;border:1px solid #c7f47d80;border-radius:50%}
 .pointer-glow.is-active,.work-cursor.is-active{opacity:1}
 .work-cursor{display:grid;place-items:center;width:66px;height:66px;border-radius:50%;background:var(--accent);color:var(--ink);font-size:14px;font-weight:650;letter-spacing:.02em;box-shadow:0 4px 24px #0003}
 
-@media(min-width:761px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+@media(hover:hover) and (pointer:fine){
   .motion-enabled .hero-art{translate:calc(var(--pointer-x,0px)*var(--depth,1)) calc(var(--pointer-y,0px)*var(--depth,1))}
   .motion-enabled .art-a{--depth:1}
   .motion-enabled .art-b{--depth:-.75}
@@ -20,14 +21,28 @@
 }
 
 /* Touch keeps a short fade, with no pointer effects or sticky intro travel. */
-@media(max-width:760px),(hover:none),(pointer:coarse){
+@media(hover:none),(pointer:coarse){
   .motion-layer{display:none}
   .hero{height:auto}
   .hero-stage{position:relative}
   .hero-art{transform:none!important;translate:none!important}
 }
 @media(prefers-reduced-motion:reduce){
-  .motion-layer{display:none}
-  .hero-art,.hero-backtype,.hero-copy,.about-sign>span,.discipline-strip>span,.hero-copy .pill-link,.contact-email{translate:none!important;rotate:none!important}
-  .work-card:hover img{transform:none}
+  html:not([data-motion=on]) .motion-layer{display:none}
+  html:not([data-motion=on]) :is(.hero-art,.hero-backtype,.hero-copy,.about-sign>span,.discipline-strip>span,.hero-copy .pill-link,.contact-email){translate:none!important;rotate:none!important}
+  html:not([data-motion=on]) .work-card:hover img{transform:none}
 }
+.motion-off{scroll-behavior:auto}
+.motion-off .motion-layer{display:none}
+.motion-off .hero{height:auto}
+.motion-off .hero-stage{position:relative}
+.motion-off .hero-art,.motion-off .work-card:hover img{transform:none!important}
+.motion-off *,.motion-off *::before,.motion-off *::after{animation:none!important;transition:none!important}
+.motion-toggle{position:fixed;right:20px;bottom:max(20px,env(safe-area-inset-bottom));z-index:40;display:flex;align-items:center;gap:9px;min-height:44px;padding:10px 16px;background:#171c15;color:#e3e9df;border:1px solid #849574;border-radius:30px;font-size:14px;line-height:1.4;cursor:pointer;box-shadow:0 5px 25px #0005}
+.motion-toggle[aria-pressed=true]{border-color:var(--accent)}
+.motion-toggle>span{font-size:19px;color:var(--accent)}
+.motion-toggle:hover,.motion-toggle:focus-visible{background:#2a3524;outline:2px solid var(--accent);outline-offset:3px}
+.motion-toggle:disabled{opacity:.65;cursor:default}
+body:has([role=dialog]) .motion-toggle{display:none}
+.site-footer{padding-bottom:90px!important}
+@media(max-width:760px){.motion-toggle{right:12px;bottom:max(12px,env(safe-area-inset-bottom));padding:9px 13px}}
