@@ -1,0 +1,33 @@
+/* Decorative layers never intercept clicks, scrolling or image gestures. */
+.motion-layer{position:fixed;inset:0;z-index:25;pointer-events:none;overflow:hidden;contain:strict}
+.pointer-glow,.work-cursor{position:absolute;top:0;left:0;opacity:0;transition:opacity .3s;pointer-events:none}
+.pointer-glow{width:1px;height:1px}
+.pointer-glow::before{content:"";position:absolute;width:520px;height:520px;left:-260px;top:-260px;background:radial-gradient(circle,rgba(199,244,125,.085),rgba(199,244,125,.025) 38%,transparent 70%)}
+.pointer-glow.is-active,.work-cursor.is-active{opacity:1}
+.work-cursor{display:grid;place-items:center;width:66px;height:66px;border-radius:50%;background:var(--accent);color:var(--ink);font-size:14px;font-weight:650;letter-spacing:.02em;box-shadow:0 4px 24px #0003}
+
+@media(min-width:761px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  .motion-enabled .hero-art{translate:calc(var(--pointer-x,0px)*var(--depth,1)) calc(var(--pointer-y,0px)*var(--depth,1))}
+  .motion-enabled .art-a{--depth:1}
+  .motion-enabled .art-b{--depth:-.75}
+  .motion-enabled .art-c{--depth:1.5}
+  .motion-enabled .art-d{--depth:-1.2}
+  .motion-enabled .hero-backtype{translate:calc(var(--pointer-x,0px)*-.4) calc(var(--progress,0)*-65px)}
+  .motion-enabled .hero-copy{translate:0 calc(var(--progress,0)*-18px)}
+  .motion-enabled .hero-copy .pill-link,.motion-enabled .contact-email{transition:translate .18s ease-out,background-color .2s,color .2s}
+  .motion-enabled .about-sign>span{display:inline-block;rotate:calc(var(--page-progress,0)*180deg)}
+  .motion-enabled .discipline-strip>span{translate:calc(var(--page-progress,0)*-32px) 0}
+}
+
+/* Touch keeps a short fade, with no pointer effects or sticky intro travel. */
+@media(max-width:760px),(hover:none),(pointer:coarse){
+  .motion-layer{display:none}
+  .hero{height:auto}
+  .hero-stage{position:relative}
+  .hero-art{transform:none!important;translate:none!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .motion-layer{display:none}
+  .hero-art,.hero-backtype,.hero-copy,.about-sign>span,.discipline-strip>span,.hero-copy .pill-link,.contact-email{translate:none!important;rotate:none!important}
+  .work-card:hover img{transform:none}
+}
