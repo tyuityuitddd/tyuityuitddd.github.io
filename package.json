@@ -11,7 +11,7 @@
     "start": "vinext start",
     "lint": "oxlint",
     "format": "oxfmt",
-    "check": "tsc --noEmit && node --experimental-strip-types scripts/check-content.mjs && node scripts/check-image-pipeline.mjs && node --experimental-strip-types scripts/check-journal.mjs && node --experimental-strip-types scripts/check-gallery.mjs",
+    "check": "tsc --noEmit && node --experimental-strip-types scripts/check-content.mjs && node scripts/check-image-pipeline.mjs && node --experimental-strip-types scripts/check-journal.mjs && node --experimental-strip-types scripts/check-gallery.mjs && node scripts/check-sphere.mjs",
     "preview": "vinext start",
     "images": "node scripts/optimize-images.mjs",
     "predev": "npm run images",

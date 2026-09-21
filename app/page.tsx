@@ -1,3 +1,8 @@
-import PortfolioHome from '@/components/circular-gallery';
-import { getWorks, getJournalPosts, settings } from '@/lib/content';
-export default function Home() { return <PortfolioHome works={getWorks()} settings={settings} posts={getJournalPosts().slice(0,3)}/>; }
+import SpherePreview from '@/components/sphere-preview';
+import { getWorks, settings } from '@/lib/content';
+import './preview/floating/floating.css';
+import './preview/floating/sphere.css';
+
+export default function Home() {
+  return <SpherePreview works={getWorks()} settings={settings} preview={false}/>;
+}
