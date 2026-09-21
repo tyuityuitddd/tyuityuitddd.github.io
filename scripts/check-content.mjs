@@ -25,7 +25,8 @@ for (const work of works) {
   if (work.video) assert(safeVideoLink(work.video),`Invalid video: ${work.slug}`);
 }
 const settings=JSON.parse(fs.readFileSync('content/settings.json','utf8'));
-assert.equal(settings.hero.length,4);
+assert(settings.hero.length<=6,'Gallery opening selection supports up to six works');
+assert.equal(new Set(settings.hero).size,settings.hero.length,'Gallery opening selection must not repeat works');
 for(const slug of settings.hero)assert(works.some(w=>w.slug===slug&&w.published),`Hero references unpublished/missing work: ${slug}`);
 assert(fs.existsSync(path.join('public',settings.avatar.replace(/^\//,''))));
 assert.equal(videoEmbed('https://youtu.be/dQw4w9WgXcQ'),'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ');

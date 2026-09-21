@@ -1,232 +1,258 @@
 ---
-name: TDDD Framebook
-description: An interactive frame book for the creator's original artwork and development notes.
+name: TDDD Circular Exhibition
+description: Original artwork in a dark circular gallery of upright frames.
 colors:
-  aubergine: "#292334"
-  lavender-paper: "#dcd8f2"
-  violet: "#473279"
-  muted-ink: "#5b526c"
-  reading-ink: "#51465f"
-  lavender-panel: "#cbc3e4"
-  divider: "#afa4c7"
-  focus: "#7051a0"
-  journal-accent: "#dfc8ff"
-  journal-muted: "#d0c6dc"
-  journal-divider: "#62546f"
-  journal-tag-border: "#81718c"
-  viewer-bg: "#211c2a"
-  viewer-text: "#f0eafa"
+  ink: "#090e14"
+  paper: "#e9eff2"
+  accent: "#a9cedb"
+  line: "#2c3841"
+  muted-text: "#a4b3bf"
+  frame-surface: "#0c141d"
+  frame-mat: "#101923"
+  frame-border: "#506171"
+  frame-current: "#94b6c6"
+  frame-hover: "#daecf5"
+  control-border: "#364956"
+  control-hover: "#1c303f"
+  control-hover-border: "#92b2c2"
+  open-surface: "#b6d1de"
+  open-ink: "#0b1620"
+  open-hover: "#d3e9f3"
+  open-border: "#789cac"
+  viewer-surface: "#090f16"
+  viewer-border: "#3c5261"
+  dialog-surface: "#111b25"
+  dialog-border: "#425767"
+  dialog-copy: "#b5c2cd"
+  active-filter: "#eaf7fd"
+  nav-text: "#b6c2ca"
+  language-active: "#22323e"
+  language-text: "#edf7ff"
+  language-border: "#425866"
+  language-hover: "#1b2832"
+  motion-surface: "#172530"
+  motion-text: "#b7cbd7"
+  journal-text: "#d3dfe7"
+  journal-muted: "#b4c2cc"
+  journal-tag-border: "#3a4e5d"
+  media-surface: "#121e28"
+  related-surface: "#111c26"
 typography:
-  display:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "clamp(112px, 19vw, 320px)"
-    fontWeight: 400
-    lineHeight: 0.82
-    letterSpacing: "-0.03em"
   wordmark:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "48px"
+    fontFamily: "GalleryDisplay, sans-serif"
+    fontSize: "36px"
     fontWeight: 400
-    lineHeight: 1
-    letterSpacing: "-0.025em"
+    letterSpacing: "1px"
   headline:
-    fontFamily: "'Microsoft JhengHei', 'Yu Gothic', Arial, sans-serif"
-    fontSize: "clamp(34px, 5.1vw, 76px)"
-    fontWeight: 750
-    lineHeight: 1.15
-    letterSpacing: "-0.03em"
-  title:
-    fontFamily: "'Microsoft JhengHei', 'Yu Gothic', Arial, sans-serif"
-    fontSize: "18px"
+    fontFamily: "Arial, 'Microsoft JhengHei', 'Yu Gothic', sans-serif"
+    fontSize: "clamp(25px, 2.8vw, 40px)"
     fontWeight: 500
+    lineHeight: 1.3
+    letterSpacing: "0.08em"
+  dialog-title:
+    fontFamily: "Arial, 'Microsoft JhengHei', 'Yu Gothic', sans-serif"
+    fontSize: "24px"
     lineHeight: 1.5
   body:
-    fontFamily: "'Microsoft JhengHei', 'Yu Gothic', Arial, sans-serif"
-    fontSize: "17px"
-    lineHeight: 1.95
+    fontFamily: "Arial, 'Microsoft JhengHei', 'Yu Gothic', sans-serif"
+    fontSize: "14px"
+    lineHeight: 1.9
   journal-body:
-    fontFamily: "'Microsoft JhengHei', 'Yu Gothic', Arial, sans-serif"
+    fontFamily: "Arial, 'Microsoft JhengHei', 'Yu Gothic', sans-serif"
     fontSize: "18px"
     lineHeight: 2
   label:
-    fontFamily: "'Microsoft JhengHei', 'Yu Gothic', Arial, sans-serif"
-    fontSize: "14px"
+    fontFamily: "Arial, 'Microsoft JhengHei', 'Yu Gothic', sans-serif"
+    fontSize: "13px"
   artwork-index:
-    fontFamily: "Arial, sans-serif"
-    fontSize: "12px"
+    fontFamily: "monospace"
+    fontSize: "10px"
+    letterSpacing: "0.15em"
+  counter:
+    fontFamily: "monospace"
+    fontSize: "13px"
+    letterSpacing: "0.1em"
 rounded:
   square: "0"
-  viewer: "4px"
+  frame: "1px"
+  control: "2px"
+  dialog: "3px"
+  circle: "50%"
+  pill: "30px"
 spacing:
-  tag-gap: "8px"
-  filter-gap: "12px"
-  compact-gap: "20px"
-  heading-gap: "32px"
-  heading-after: "40px"
-  gallery-row: "88px"
-  section-block: "100px"
+  compact: "12px"
+  control: "16px"
+  section: "24px"
+  dialog-columns: "38px"
 components:
-  outline-link:
+  open-artwork:
+    backgroundColor: "{colors.open-surface}"
+    textColor: "{colors.open-ink}"
+    rounded: "{rounded.control}"
+    padding: "13px 18px"
+  open-artwork-hover:
+    backgroundColor: "{colors.open-hover}"
+  icon-button:
     backgroundColor: "transparent"
-    textColor: "{colors.aubergine}"
-    rounded: "{rounded.square}"
-    padding: "13px 21px"
-  outline-link-hover:
-    backgroundColor: "{colors.aubergine}"
-    textColor: "{colors.lavender-paper}"
+    textColor: "{colors.paper}"
+    rounded: "{rounded.circle}"
+    width: "44px"
+    height: "44px"
+  icon-button-hover:
+    backgroundColor: "{colors.control-hover}"
   filter:
     backgroundColor: "transparent"
-    textColor: "{colors.muted-ink}"
+    textColor: "{colors.muted-text}"
     rounded: "{rounded.square}"
+    padding: "14px 0"
+  filter-active:
+    textColor: "{colors.active-filter}"
+  artwork-frame:
+    backgroundColor: "{colors.frame-surface}"
+    rounded: "{rounded.frame}"
+    padding: "9px"
+    width: "clamp(205px, 23vw, 325px)"
+    height: "clamp(250px, 49svh, 510px)"
+  viewer:
+    backgroundColor: "{colors.viewer-surface}"
+    textColor: "{colors.paper}"
+    rounded: "{rounded.dialog}"
+    padding: "17px 24px"
+  motion-toggle:
+    backgroundColor: "{colors.motion-surface}"
+    textColor: "{colors.motion-text}"
+    rounded: "{rounded.pill}"
     padding: "10px 16px"
-  filter-selected:
-    textColor: "{colors.aubergine}"
-    backgroundColor: "transparent"
   journal-tag:
     textColor: "{colors.journal-muted}"
-    rounded: "{rounded.square}"
+    rounded: "{rounded.pill}"
     padding: "4px 12px"
-  motion-toggle:
-    backgroundColor: "{colors.aubergine}"
-    textColor: "{colors.lavender-paper}"
-    rounded: "{rounded.square}"
-    padding: "10px 16px"
-  lightbox:
-    backgroundColor: "{colors.viewer-bg}"
-    textColor: "{colors.viewer-text}"
-    rounded: "{rounded.viewer}"
-    padding: "20px 28px"
 ---
 
-# Design System: TDDD Framebook
+# Design System: TDDD Circular Exhibition
 
 ## Overview
 
-**Creative North Star: "The Interactive Frame Book"**
+**Creative North Star: "Dark circular exhibition"**
 
-Cool lavender paper, condensed aubergine lettering, and rectangular artwork panes turn the portfolio into a sequence of frames. The creator's images carry the visual detail; the interface supplies scale, spacing, borders, and movement. The large TDDD mark is the typographic signature.
+Upright artwork frames occupy a dark exhibition space. The current work faces the visitor; neighboring frames turn away around a perspective ring. Ink surfaces, cool blue-gray edges, and pale controls support the creator's original images.
 
-Pointer movement and native scrolling open the frames. Motion is an optional layer over readable, navigable content: it never intercepts scrolling or clicks. The dark development-note band interrupts the light gallery rhythm, while work detail pages and standalone journal pages retain the light reading surface.
-
-This record describes the implemented cascade: `app/layout.tsx` imports `globals.css`, then `motion.css`, then `framebook.css`. The last file establishes the final palette and geometry; earlier files still supply component structure. The generated proposal is a composition reference only. Shipping artwork uses preexisting user-supplied originals and their optimized WebP variants. Bebas Neue is self-hosted in `public/fonts/BebasNeue-Regular.ttf`, with `OFL-BebasNeue.txt`, sourced from the official Google Fonts repository.
+The user explicitly replaced the lavender waterfall direction on 2026-09-21. This record describes the implemented ring and its desktop/mobile review captures; no approved raster comp applies to this replacement direction. Dragging, arrows, selection, and click-to-view form the interaction model. Motion remains optional.
 
 **Key Characteristics:**
-- Monumental condensed identity lettering beside offset portrait panes.
-- Light lavender gallery and detail surfaces with one dark journal preview band.
-- Square controls, fine rules, and artwork shown at its natural ratio in the gallery.
-- Pointer parallax, gentle card tilt, and differentiated scroll entrances.
-- A persistent motion choice, reduced-motion defaults, and keyboard-safe geometry.
-
-Evidence: source plus manual screenshots in `.impeccable/review/` (`desktop.png`, `desktop-scroll.png`, `mobile.png`, `works-581.png`, `journal.png`). This document does not certify a numeric comp fidelity score or a completed build gate; build state remains separately tracked in `.impeccable/build/state.json`.
+- Upright frames on a perspective ring, with the selected work centered.
+- Original artwork contained within a dark mat; no universal artwork crop.
+- A condensed TDDD identity, compact multilingual text, and monospace counters.
+- Dark gallery, detail, journal, and dialog surfaces with cool blue-gray controls.
+- Responsive controls and persistent optional motion.
 
 ## Colors
 
-The palette is cool lavender paper with dark aubergine ink and restrained violet interaction accents.
-
-Sidecar tonal ramps are synthesized OKLCH preview metadata, not additional production palette tokens.
+The palette combines near-black blue surfaces with pale blue-gray interaction cues. Frontmatter carries the exact implemented primitives.
 
 ### Primary
-- **Violet:** Links, active details, progress rail, and state accents.
-- **Focus violet:** Visible keyboard outlines on the light field.
+
+- **Accent:** focus outlines, heading punctuation, selected category underline, and viewer/contact links.
+- **Open surface / open ink:** the filled artwork action; open-hover lightens its surface.
 
 ### Neutral
-- **Lavender paper:** Main canvas, header, light button text on dark controls.
-- **Aubergine:** Primary ink, dark journal preview, motion control, and viewer affordances.
-- **Muted ink / reading ink:** Secondary labels and quieter explanatory copy on light surfaces.
-- **Lavender panel:** About section, next-work panel, and image backing surfaces.
-- **Divider:** Fine rules on light surfaces.
-- **Journal accent / muted / divider / tag border:** Context-specific inverse values for the dark home-page journal preview.
-- **Viewer background / text:** Dark lightbox and video surfaces, separate from page reading surfaces.
 
-**The Local Inversion Rule.** Invert the home journal preview as a section, using its light text and violet accent overrides; standalone journal pages remain light in the current implementation.
+- **Ink / paper:** the page canvas and primary text. Detail and journal pages share the ink canvas.
+- **Muted text / nav text:** supporting labels and navigation; navigation and filters brighten to white on hover.
+- **Frame surface / frame mat:** the frame surround and uncropped image bed; frame-current and frame-hover clarify state.
+- **Viewer / dialog surfaces:** dark tonal layers separated by their fine border colors.
+- **Journal text / journal muted:** long-form copy and metadata; media-surface and related-surface provide secondary panels.
+
+**The Artwork First Rule.** Keep the artwork as the visual detail; use the dark mat and restrained blue-gray frame to hold it.
 
 ## Typography
 
-**Display Font:** Bebas Neue, with sans-serif fallback.
+**Display Font:** GalleryDisplay, the self-hosted BebasNeue-Regular.ttf, with sans-serif fallback.
+**Body Font:** Arial, Microsoft JhengHei, Yu Gothic, sans-serif, in that order.
+**Counter Font:** monospace.
 
-**Body Font:** Microsoft JhengHei, Yu Gothic, Arial, sans-serif, supporting the Chinese, Japanese, and English interface.
-
-**Character:** The authored condensed Latin wordmark contrasts with readable multilingual text. Body copy uses generous leading; dates, counts, and indices remain compact. The `headline` token records the present CJK fallback implementation, not an additional branded display face.
+The condensed Latin wordmark identifies TDDD. Multilingual interface and reading copy inherit the existing system stack. The observed system-font page heading is recorded for accuracy, not promoted as a branded display treatment.
 
 ### Hierarchy
-- **Display:** The TDDD hero identity; mobile uses `clamp(98px, 24vw, 175px)` with a tighter line height (`.8`).
-- **Wordmark:** Header identity, reduced to `38px` at the mobile breakpoint. Footer identity is `70px`, reduced to `56px`.
-- **Headline:** Section titles; common mobile section headings use `36px`. Detail titles use `clamp(35px, 5vw, 76px)` and line height `1.18`; the journal masthead uses `clamp(38px, 6vw, 88px)`.
-- **Title:** Work captions use the frontmatter title role; journal preview titles use `clamp(24px, 2.6vw, 38px)` with line height `1.4`.
-- **Body:** Biography text; journal articles use the separate journal-body role inside a `780px` reading column and reduce to `17px` on mobile.
-- **Label:** Navigation, dates, and secondary controls. Artwork indices use tabular numerals; metadata may inherit existing monospace treatments.
 
-**The Identity Lettering Rule.** Use the self-hosted condensed face for TDDD identity marks; preserve multilingual reading clarity around it.
+- **Wordmark:** frontmatter wordmark role; decreases to 28px at the mobile breakpoint.
+- **Gallery headline:** frontmatter headline role; 27px on mobile and 28px for short desktop viewports.
+- **About dialog title / body:** frontmatter dialog-title and body roles; title becomes 22px on mobile.
+- **Viewer title:** 14px, weight 400, line-height 1.6.
+- **Navigation / filters:** frontmatter label role; both become 12px on mobile.
+- **Journal reading:** frontmatter journal-body role; 17px on mobile in a 780px maximum reading column.
+- **Indices / counter:** monospace roles; the mobile counter becomes 12px with .02em spacing.
+
+**The Identity Lettering Rule.** Use the self-hosted GalleryDisplay face for the TDDD wordmark. Other text follows the existing multilingual system stack; it is not a new branded display-face commitment.
 
 ## Layout
 
-The desktop header is `84px` high with `4vw` side padding. Regular sections use the section-block spacing and `6vw` side padding. At widths above `1600px`, side padding grows to hold an approximately `1480px` content span. At `760px` and below, regular sections use `65px 6vw`, navigation wraps into a second header row, and the header becomes `106px` high. Smaller inherited adjustments exist at `380px`; intermediate adjustments occur at `1000px`.
+The homepage is a flex column at 100svh with a 650px minimum height. Its 78px header precedes the heading/filter row, flexible stage, navigation console, and journal footer. Horizontal page margins are 4vw. The console uses three columns (1fr auto 1fr): guidance, selection, and the open action.
 
-The desktop gallery uses a twelve-column grid, alternating five- and seven-column image spans, `5vw` column gaps, and the gallery-row spacing. Even cards offset by `90px`. On mobile it becomes two columns with `20px` column gaps and `50px` row gaps; even portrait cards offset by `55px`, while landscape cards span both columns. Gallery images retain intrinsic proportions instead of being cropped to a universal card shape.
+The stage uses 1150px perspective. Frames sit at left 50% and top 46%; their maximum height is 86% of the stage. Ring radius is clamped to 235–740px from 52% of stage width. Adjacent slots are 42 degrees apart; Y rotation is -0.68 times that angle, with depth scaled by .85. At most seven frames render around the current selection; distances two and three use .55 and .26 opacity. Frame images use object-fit: contain.
 
-The hero is a native-scroll scene (`185svh`) with a sticky viewport stage and `680px` minimum stage height. Its title occupies the left third; portrait panes begin at `38%` and `73%`. At mobile widths the title precedes the images, the scene is `170svh`, and the stage minimum is `730px`. Coarse pointers use a shorter `155svh` scene. Scroll computes a clamped `--progress` from zero to one; the rail visualizes actual scene progress and the two portraits separate to reveal an invitation. Disabling motion removes the sticky travel and preserves the starting composition.
+At widths of 1000px and below, gaps compress, the current work label disappears, and the latest journal title shortens. At 760px and below, the header is 96px high with navigation on its second row; margins become 5vw, the heading and filters stack, and the shell minimum is 640px. Perspective becomes 850px. Frames use width clamp(195px,48vw,270px), height 41svh, max-height 81%, top 43%, and 6px padding. The console becomes two columns; the centered drag guide occupies its own last row. Selector arrow buttons become 40px circles. The footer hides copyright and the latest title, retaining the journal link with space for the fixed motion toggle.
 
-The home journal preview uses a date column (`160px`) and content column separated by `45px`, becoming one column on mobile. Standalone journal index and article containers are limited to `1400px` and `1080px`; article body copy to `780px`. Detail galleries cap at `1800px`, with illustration galleries capped at `1150px`.
+At 1700px and above, perspective increases to 1400px and frames are 350px wide. At desktop widths above 760px with height at most 700px, shell minimum height becomes 570px and frames use 42svh with a 77% maximum height.
 
 ## Elevation & Depth
 
-The resting interface is flat: color fields, fine rules, and image scale establish hierarchy. Depth appears during direct interaction through perspective, tilt, and diffuse hover shadows. The pointer indicator is a small outlined diamond and rectangular viewing hint; the older radial glow is disabled by the final cascade.
+Perspective geometry establishes the exhibition. Shadows separate the upright frames; narrow luminous lines above/below them and two faint elliptical floor rings anchor the scene. A muted radial stage light and 18 tiny drifting particles add atmosphere. This glow is part of the chosen ring implementation, not a prohibited device.
 
 ### Shadow Vocabulary
-- **Portrait hover:** `0 18px 35px #29233430`.
-- **Artwork tilt hover:** `0 20px 38px #29233425`, used when motion is enabled.
 
-**The Responsive Depth Rule.** Keep resting artwork flat; use perspective and soft shadow to acknowledge pointer interaction without obscuring the image.
+- **Frame:** 0 20px 45px #0007, inset 0 0 0 3px #18222b.
+- **Current frame:** 0 25px 65px #0009, 0 0 40px #759aaa0d, inset 0 0 0 3px #263641.
+- **Motion toggle:** 0 5px 25px #0005.
+
+**The Upright Ring Rule.** Keep the frames upright while position, Y rotation, opacity, and shadow establish their place on the ring.
 
 ## Shapes
 
-The dominant forms are crisp rectangles: portrait panes, outline links, filters, tags, the progress rail, viewing hints, and the motion toggle. Controls use thin borders or a selected underline rather than pill silhouettes. The desktop lightbox retains a small viewer radius and becomes square and full-screen on mobile. Existing zoom-image labels retain a rounded local treatment; do not treat that leftover exception as the recurring frame-book shape. Their hover and keyboard-focus state uses white text on violet (10.50:1). The about signature uses aubergine text on an opaque lavender plate so its contrast does not depend on the artwork behind it.
+Artwork frames are nearly square-cornered; the filled open control and language states have small corner rounding. Dialogs use the dialog radius, while selector, close, and viewer navigation buttons are circular. Journal tags and the persistent motion toggle retain pill silhouettes. Artwork is contained within rectangular mats; only the about portrait uses object-fit: cover.
 
 ## Components
 
-### Buttons and links
+### Navigation and language
 
-Outline links have a one-pixel current-color border, square corners, and minimum height `48px`; mobile hero links use `44px`. Hover exchanges ink and paper. The load-more control uses `15px 27px` padding and a minimum height of `50px`. The dark journal link reverses the same treatment. Light-surface focus uses a two-pixel focus outline with `5px` offset. Icons are inline SVG through Lucide components.
+The translucent header uses a 12px backdrop blur and a faint bottom rule. Text navigation sits beside the wordmark and language controls. The selected language uses language-active, language-text, and language-border; hover uses language-hover and white text. Mobile navigation occupies a centered second row.
 
-### Filters and tags
+### Category filters
 
-Filters are wrapping text controls with category counts and an `aria-pressed` state. Selection is a two-pixel underline, while hover adds a pale lavender fill. Result count uses tabular numerals and is hidden on mobile. Journal tags are static rectangular outlined labels; they are not filter buttons.
+Transparent text buttons pair each category with a small monospace count. A one-pixel accent underline and active-filter text show the pressed state. Hover brightens the text without introducing a filled chip. Changing category resets selection to the first work.
 
-### Artwork cards
+### Circular gallery and controls
 
-Cards are image-led links with no surrounding panel. Index numbers sit above the image; multiple-image counts and a viewing arrow sit at the bottom. Captions are conditional: commissioned illustration work omits visible filenames and titles. Hover and keyboard focus expose the arrow affordance; mobile keeps it visible. Fine-pointer tilt is bounded to approximately `±2.5deg` on X and `±3.5deg` on Y.
+Dragging horizontally rotates the ring; a side-frame click centers that work and a center-frame click opens it. Left/right arrows, the native select, and a separate filled open action provide alternatives. The stage accepts Left/Right and Enter. Only the current frame is in the tab order; synthetic keyboard clicks remain usable after a drag. Focus uses a 2px accent outline with 5px offset; the stage uses an inset -6px offset. Disabled buttons fade to .35, except the inherited motion toggle's .65 disabled state.
 
-### Navigation
+Frames transition transform over .72s with cubic-bezier(.22,.7,.18,1), opacity over .6s, and border color over .25s. Dragging disables the frame transition. Fine-pointer movement adds subtle stage tilt with .4s ease-out; particles alternate over 7s. Explicit motion-off, or the reduced-motion default without explicit opt-in, disables stage tilt, frame transitions, and particle animation. The ring geometry and navigation remain available. Saved explicit preference takes precedence over the OS default.
 
-The header combines the condensed wordmark, three navigation destinations, and a Chinese/English/Japanese switch. Links receive an animated underline; the current language receives an underline and darker ink. A focusable skip link precedes the header. Detail pages use a normal-flow header and back link. Language is restored from the URL or optional local storage.
+### Artwork viewer
 
-### Journal rows
+A dark modal contains the uncropped image, title/accessible category label, close circle, image counter, previous/next circles, and conditional project-detail link. Width is calc(100vw - 48px), maximum 1500px; height is calc(100svh - 48px). The overlay is #02070eee with 12px blur. Arrow keys switch images. The underlying dialog primitive manages modal semantics and dismissal. On mobile, the viewer fills 100vw by 100svh, has no corner radius, and uses 12px padding; bottom controls can wrap. Commissioned illustrations use category labels rather than visible filenames or project titles, and omit the project-detail link.
 
-The home preview is a dark text-led list with covers hidden, dates aligned at left, rectangular tags, and rule-separated entries. Standalone journal lists can display covers and remain on the light canvas. Body copy and source notes maintain a narrow, generous-leading reading column.
+### About/contact dialog
 
-### Motion system
+The desktop dialog is 760px wide with 180px and flexible columns, 38px gap, and 55px 40px padding. Its maximum dimensions leave 40px viewport clearance; overflow scrolls. The portrait is 180 by 230px. On mobile, columns stack, padding becomes 45px 25px 30px, gap becomes 24px, and portrait becomes 92 by 112px. Services are compact text between fine rules, followed by an accent email link.
 
-The persistent bottom-right toggle has a minimum height of `44px`, an explicit pressed state, translated labels, and optional storage under `tddd-motion`. System reduced-motion preference supplies the default; an explicit saved on/off choice takes precedence. The toggle is hidden during dialogs. Turning motion off cancels entrance animations, suppresses pointer layers and transitions, resets card and portrait transforms, and removes sticky hero travel.
+### Journal tags and motion choice
 
-Fine mouse pointers move portrait planes by small opposing offsets and produce bounded magnetic movement on the hero explore link and contact email. Decorative layers are pointer-transparent. Native scroll remains intact; no wheel or touch event is intercepted. Entrance motion starts only after intersection: artwork uses a `950ms` clip reveal and vertical travel; text uses a `650ms` fade/translation, with up to `90ms` stagger and `cubic-bezier(.16,1,.3,1)` easing. Content is visible before JavaScript or animation registration. Keyboard interaction clears pointer effects; focus cancels an entrance affecting the target, restores hero starting geometry, and hides the behind-frame reveal.
-
-### Image viewer
-
-Images open into a dark dialog with an accessible title, close button, previous/next controls, arrow-key navigation, and an image fitted within the available space. Control boundaries disable previous/next at the ends. The mobile dialog fills the viewport. Videos start from an explicit play control.
+Journal tags are static pill metadata with fine blue-gray outlines. The motion toggle is a fixed pill with a 44px minimum height, lower-right safe-area placement, and accent focus ring. It is hidden while a dialog is open. The home ring hides the inherited global decorative motion layer.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** preserve original artwork provenance and use the responsive optimized-image pipeline.
-- **Do** keep commissioned illustration cards and pages free of visible filenames and titles.
-- **Do** retain the light reading canvas and the local dark journal preview inversion.
-- **Do** keep pointer and scroll effects optional, with readable content before JavaScript and safe keyboard focus.
-- **Do** consult the final stylesheet cascade before extending a component.
+- **Do** preserve original artwork provenance and the optimized-image pipeline.
+- **Do** contain the complete artwork within its frame and viewer.
+- **Do** keep commissioned illustrations free of visible filenames and project titles.
+- **Do** preserve arrow, select, keyboard, and explicit open controls alongside dragging.
+- **Do** keep pointer response, transitions, and particles optional through the motion preference.
+- **Do** consult the final imported stylesheet cascade before extending the system.
 
 ### Don't:
-- **Don't** publish the generated proposal as creator artwork.
-- **Don't** convert the native-scroll scene into scroll hijacking or gate content behind animation.
-- **Don't** carry the obsolete neon-green palette, radial glow, or floating photo-card composition into new surfaces.
-- **Don't** apply a universal crop to gallery images that currently preserve their intrinsic proportions.
+- **Don't** restore the user-rejected lavender palette or waterfall homepage.
+- **Don't** treat the superseded lavender comp as approval for the current design.
+- **Don't** replace supplied artwork with a generated proposal or fabricate project claims.
+- **Don't** make animation completion a prerequisite for navigation or viewing.
 
-Not canonized or repaired by this documentation pass: superseded rules in `globals.css` and `motion.css`, legacy rounded zoom labels, the footer's text arrow, and system-font CJK display fallback. These remain implementation drift or fallback details, not new signature rules. Documentation records the current cascade and does not change UI or claim completion of pending visual/build review gates.
+Not canonized or repaired: the system-font gallery heading remains an observed inherited treatment, not a new display-font rule. Obsolete framebook styles are not imported and are not visual authority. The review found no material visual issue in the supplied desktop/mobile ring captures; no raster-comp approval is claimed.

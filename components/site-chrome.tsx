@@ -25,12 +25,12 @@ export function useLanguage() {
   return [lang, changeLanguage] as const;
 }
 
-export function Header({lang,onLanguage,detail=false}:{lang:Language;onLanguage:(lang:Language)=>void;detail?:boolean}) {
+export function Header({lang,onLanguage,detail=false,onAbout}:{lang:Language;onLanguage:(lang:Language)=>void;detail?:boolean;onAbout?:()=>void}) {
   const t = copy[lang];
   const home = detail ? `${localUrl('')}?lang=${lang}` : '';
   return <><a className="skip-link" href={detail ? '#main' : '#works'}>{t.skip}</a><header className="site-header">
     <a className="wordmark" href={`${home}#top`} aria-label="TDDD — Home">TDDD</a>
-    <nav aria-label={t.works}><a href={`${home}#works`}>{t.works}</a><a href={`${localUrl('journal/')}?lang=${lang}`}>{journalCopy[lang].title}</a><a href={`${home}#about`}>{t.about}</a></nav>
+    <nav aria-label={t.works}><a href={`${home}#works`}>{t.works}</a><a href={`${localUrl('journal/')}?lang=${lang}`}>{journalCopy[lang].title}</a><a href={`${home}#about`} onClick={onAbout?event=>{event.preventDefault();onAbout()}:undefined}>{t.about}</a></nav>
     <div className="language-switch" role="group" aria-label={t.language}>{(['zh','en','ja'] as const).map(value=><Button key={value} variant="ghost" className="language-button" aria-pressed={lang===value} lang={value==='zh'?'zh-Hant':value} onClick={()=>onLanguage(value)}>{value==='zh'?'中':value==='en'?'EN':'日'}</Button>)}</div>
   </header></>;
 }

@@ -91,12 +91,12 @@ content:
           - { name: en, label: English, type: text }
           - { name: ja, label: 日本語, type: text }
       - name: hero
-        label: 首頁主視覺作品代號（顯示前兩個已公開作品）
+        label: 環形畫廊優先展出的作品代號
         type: string
         list:
-          min: 4
-          max: 4
-        description: 填入作品網址代號，依序為左上、右上、左下、右下。
+          min: 0
+          max: 6
+        description: 依序填入已公開作品的網址代號，作為畫廊的前幾件作品；其餘作品會自動接續展出。
 
   - name: journal
     label: Godot 開發日誌
