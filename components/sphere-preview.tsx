@@ -19,7 +19,7 @@ const words={
 export default function SpherePreview({works,settings,preview=true}:{works:Work[];settings:Settings;preview?:boolean}){
  const [lang,changeLanguage]=useLanguage();
  const [category,setCategory]=useState<Category|'all'>('all');
- const [motion,setMotion]=useState(false);
+ const [motion,setMotion]=useState(true);
  const [autoRotate,setAutoRotate]=useState(false);
  const [viewing,setViewing]=useState<Work|null>(null);
  const [imageIndex,setImageIndex]=useState(0);
@@ -34,13 +34,16 @@ export default function SpherePreview({works,settings,preview=true}:{works:Work[
  const textures=useMemo(()=>entries.map(entry=>({image:entry.image})),[entries]);
  const t=copy[lang],g=words[lang];
  useEffect(()=>{
-  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  const update=()=>{let enabled=!reduced.matches;try{const saved=localStorage.getItem('tddd-sphere-interaction');if(saved!==null)enabled=saved==='on'}catch{/* Optional preference. */}setMotion(enabled)};update();reduced.addEventListener('change',update);
+  // Cursor attraction is the requested primary interaction, enabled on first visit.
+  // A visitor may still explicitly turn it off; automatic rotation has its own preference.
+  const update=()=>{let enabled=true;try{const saved=localStorage.getItem('tddd-sphere-interaction');if(saved!==null)enabled=saved==='on'}catch{/* Optional preference. */}setMotion(enabled)};update();
+  const sync=(event:StorageEvent)=>{if(event.key==='tddd-sphere-interaction'||event.key===null)update();if(event.key==='tddd-sphere-rotation')setAutoRotate(event.newValue==='on')};
+  addEventListener('storage',sync);
   // Rotation is independent of pointer attraction. The old global switch must not disable hover.
   let rotation=motionAllowed();
   try { const saved=localStorage.getItem('tddd-sphere-rotation');if(saved!==null)rotation=saved==='on'; } catch { /* Optional preference. */ }
   setAutoRotate(rotation);
-  return()=>reduced.removeEventListener('change',update);
+  return()=>removeEventListener('storage',sync);
  },[]);
  useEffect(()=>{document.title=preview?`TDDD — ${g.preview}`:`${settings.name} — ${t.disciplines}`},[g.preview,preview,settings.name,t.disciplines]);
  function open(entry:SphereEntry){setImageIndex(entry.imageIndex);setViewing(entry.work);setPlaying(false);setIndexOpen(false)}

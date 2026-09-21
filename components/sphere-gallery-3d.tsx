@@ -1176,6 +1176,7 @@ export default function SphereGallery3D(props: SphereGallery3DProps) {
         canvas.addEventListener("keydown",onKey)
         canvas.style.cursor = "grab"
         canvas.style.touchAction = "none"
+        canvas.addEventListener("pointerenter", onPointerMove)
         canvas.addEventListener("pointerdown", onPointerDown)
         canvas.addEventListener("pointerleave", onLeave)
         canvas.addEventListener("wheel", onWheel, { passive: false })
@@ -1560,6 +1561,7 @@ export default function SphereGallery3D(props: SphereGallery3DProps) {
             canvas.removeEventListener("webglcontextrestored",onRestored)
             cancelAnimationFrame(raf)
             ro.disconnect()
+            canvas.removeEventListener("pointerenter", onPointerMove)
             canvas.removeEventListener("pointerdown", onPointerDown)
             canvas.removeEventListener("pointerleave", onLeave)
             canvas.removeEventListener("wheel", onWheel)
