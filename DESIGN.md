@@ -180,7 +180,7 @@ The resting interface is flat: color fields, fine rules, and image scale establi
 
 ## Shapes
 
-The dominant forms are crisp rectangles: portrait panes, outline links, filters, tags, the progress rail, viewing hints, and the motion toggle. Controls use thin borders or a selected underline rather than pill silhouettes. The desktop lightbox retains a small viewer radius and becomes square and full-screen on mobile. Existing zoom-image labels retain a rounded local treatment; do not treat that leftover exception as the recurring frame-book shape.
+The dominant forms are crisp rectangles: portrait panes, outline links, filters, tags, the progress rail, viewing hints, and the motion toggle. Controls use thin borders or a selected underline rather than pill silhouettes. The desktop lightbox retains a small viewer radius and becomes square and full-screen on mobile. Existing zoom-image labels retain a rounded local treatment; do not treat that leftover exception as the recurring frame-book shape. Their hover and keyboard-focus state uses white text on violet (10.50:1). The about signature uses aubergine text on an opaque lavender plate so its contrast does not depend on the artwork behind it.
 
 ## Components
 
